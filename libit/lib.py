@@ -46,7 +46,6 @@ class wallet:
     def to_bytes(self, data) -> bytes:
         return bytes.fromhex(data)
 
-
     def hex_to_bytes(self, hexed):
         return unhexlify(hexed)
 
@@ -96,6 +95,7 @@ class wallet:
         isCompress = wif_bytes[-5] == 0x01 if len(wif_bytes) == 38 else False
         return wif_bytes[1:-5] if isCompress else wif_bytes[1:-4]
 
+
 class ethereum:
     def __int__(self):
         super().__init__()
@@ -117,6 +117,7 @@ class ethereum:
             return "0x" + hashaddr[2:]
         else:
             raise ValueError("hash address format is invalid.")
+
 
 class tron:
     def __init__(self):
@@ -140,18 +141,227 @@ tron = tron()
 ethereum = ethereum()
 wallet = wallet()
 
-def bytes_wif(seed: bytes, compress: bool = False) -> str: return wallet.bytes_to_wif(seed, compress)
-def hex_bytes(hex_string: str) -> bytes: return bytes.fromhex(hex_string)
-def privatekey_wif(privateHex: str, compress: bool = False) -> str: return wallet.bytes_to_wif(wallet.hex_to_bytes(privateHex), compress)
-def privatekey_decimal(privateHex: str) -> int: return int(privateHex, 16)
-def bytes_addr(seed: bytes, compress: bool = False) -> str: return wallet.pub_to_addr(wallet.bytes_to_public(seed, compress))
-def wif_addr(wif: str, compress: bool = False) -> str: return bytes_addr(wallet.wif_to_bytes(wif), compress)
-def privatekey_addr(hex_string: str, compress: bool = False) -> str: return bytes_addr(hex_bytes(hex_string), compress)
-def passphrase_addr(passphrase: str, compress: bool = False) -> str: return wallet.pass_to_addr(passphrase, compress)
-def dec_addr(dec: int, compress: bool = False) -> str: return bytes_addr(wallet.int_to_bytes(dec), compress)
-def bytes_eth(seed: bytes) -> str: return eth_addr(wallet.bytes_to_hex(seed))
-def eth_addr(hex_string: str): return ethereum.hex_to_eth(hex_string)
-def dec_eth(dec: int) -> str: return eth_addr(wallet.int_to_hex(dec))
-def bytes_trx(seed: bytes) -> str: return trx_addr(wallet.bytes_to_hex(seed))
-def trx_addr(hex_string: str): return tron.hex_to_tron(hex_string)
-def dec_trx(dec: int) -> str: return trx_addr(wallet.int_to_hex(dec))
+
+def bytes_wif(seed: bytes, compress: bool = False) -> str:
+    return wallet.bytes_to_wif(seed, compress)
+
+
+def hex_bytes(hex_string: str) -> bytes:
+    return bytes.fromhex(hex_string)
+
+
+def privatekey_wif(privateHex: str, compress: bool = False) -> str:
+    """
+    convert a private key to wif
+    Args:
+        privateHex:
+        compress:
+
+    Returns:
+        wif:
+
+    >>> privateHex = "12345567890abcdef..1234567890abcdef"
+    >>> wif = privatekey_wif(privateHex)
+
+    """
+    seed = wallet.hex_to_bytes(privateHex)
+    return wallet.bytes_to_wif(seed, compress)
+
+
+def privatekey_decimal(privateHex: str) -> int:
+    """
+
+    convert a private key to decimal
+    Args:
+        privateHex:
+
+    Returns:
+        int:
+
+    >>> privateHex = "12345567890abcdef..1234567890abcdef"
+    >>> decimal = privatekey_decimal(privateHex)
+    """
+    return int(privateHex, 16)
+
+
+def bytes_addr(seed: bytes, compress: bool = False) -> str:
+    """
+
+    Args:
+        seed:
+        compress:
+
+    Returns:
+        addr:
+
+    >>> seed_bytes = "HERE BYTES 32"
+    >>> compress_address = bytes_addr(seed_bytes, True)
+    >>> uncompress_address = bytes_addr(seed_bytes)
+    """
+    pb = wallet.bytes_to_public(seed, compress)
+    return wallet.pub_to_addr(pb)
+
+
+def wif_addr(wif: str, compress: bool = False) -> str:
+    """
+
+    Args:
+        wif:
+        compress:
+
+    Returns:
+        addr:
+
+    >>> wif = "5KMnkl,,,,,,MNadh"
+    >>> compress_address = wif_addr(wif, True)
+    >>> uncompress_address = wif_addr(wif)
+    """
+    seed = wallet.wif_to_bytes(wif)
+    return bytes_addr(seed, compress)
+
+
+def privatekey_addr(hex_string: str, compress: bool = False) -> str:
+    """
+
+    Args:
+        hex_string:
+        compress:
+
+    Returns:
+        addr:
+
+    >>> hex_string = "12345567890abcdef..1234567890abcdef"
+    >>> compress_address = privatekey_addr(hex_string, True)
+    >>> uncompress_address = privatekey_addr(hex_string)
+    """
+    seed = hex_bytes(hex_string)
+    return bytes_addr(seed, compress)
+
+
+def passphrase_addr(passphrase: str, compress: bool = False) -> str:
+    """
+
+    Args:
+        passphrase:
+        compress:
+
+    Returns:
+        addr:
+
+    >>> passphrase = "Mmdrza.Com"
+    >>> compress_address = passphrase_addr(passphrase, True)
+    >>> uncompress_address = passphrase_addr(passphrase)
+    """
+    return wallet.pass_to_addr(passphrase, compress)
+
+
+def dec_addr(dec: int, compress: bool = False) -> str:
+    """
+
+    Args:
+        dec:
+        compress:
+
+    Returns:
+        addr:
+
+    >>> dec = 12345567890
+    >>> compress_address = dec_addr(dec, True)
+    >>> uncompress_address = dec_addr(dec)
+    """
+    seed = wallet.int_to_bytes(dec)
+    return bytes_addr(seed, compress)
+
+
+def bytes_eth(seed: bytes) -> str:
+    """
+
+    Args:
+        seed:
+
+    Returns:
+        eth_addr:
+
+    >>> seed_bytes = "HERE BYTES 32"
+    >>> eth_address = bytes_eth(seed_bytes)
+    """
+    return eth_addr(wallet.bytes_to_hex(seed))
+
+
+def eth_addr(hex_string: str):
+    """
+
+    Args:
+        hex_string:
+
+    Returns:
+        eth_addr:
+
+    >>> hex_string = "12345567890abcdef..1234567890abcdef"
+    >>> eth_address = eth_addr(hex_string)
+
+    """
+    return ethereum.hex_to_eth(hex_string)
+
+
+def dec_eth(dec: int) -> str:
+    """
+
+    Args:
+        dec:
+
+    Returns:
+        eth_addr:
+
+    >>> dec = 12345567890
+    >>> eth_address = dec_eth(dec)
+    """
+    return eth_addr(wallet.int_to_hex(dec))
+
+
+def bytes_trx(seed: bytes) -> str:
+    """
+
+    Args:
+        seed:
+
+    Returns:
+        trx_addr:
+
+    >>> seed_bytes = "HERE BYTES 32"
+    >>> trx_address = bytes_trx(seed_bytes)
+
+    """
+    return trx_addr(wallet.bytes_to_hex(seed))
+
+
+def trx_addr(hex_string: str):
+    """
+
+    Args:
+        hex_string:
+
+    Returns:
+        trx_addr:
+
+    >>> hex_string = "12345567890abcdef..1234567890abcdef"
+    >>> trx_address = trx_addr(hex_string)
+
+    """
+    return tron.hex_to_tron(hex_string)
+
+
+def dec_trx(dec: int) -> str:
+    """
+
+    Args:
+        dec:
+
+    Returns:
+        trx_addr:
+
+    >>> dec = 12345567890
+    >>> tron_address = dec_trx(dec)
+
+    """
+    return trx_addr(wallet.int_to_hex(dec))
