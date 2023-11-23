@@ -1,3 +1,15 @@
 
-libit/.DS_Store
+libit1/.DS_Store
 .DS_Store
+dist/libit-1.3.6.tar.gz
+libit.egg-info/dependency_links.txt
+libit.egg-info/PKG-INFO
+libit.egg-info/requires.txt
+libit.egg-info/SOURCES.txt
+libit.egg-info/top_level.txt
+build/lib/libit1/reuse.py
+build/lib/libit1/lib.py
+build/lib/libit1/bs58.py
+build/lib/libit1/asset.py
+build/lib/libit1/__init__.py
+dist/libit-1.6.3.tar.gz

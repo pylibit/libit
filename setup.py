@@ -5,11 +5,12 @@ with open("README.md", "r") as fh:
 
 setup(
     name='libit',
-    version='1.3.1',
+    version='1.6.3',
     license='http://opensource.org/licenses/MIT',
     packages=find_packages(),
     install_requires=[
-        'pycryptodome'
+        'pycryptodome',
+        'ecdsa'
     ],
 
     classifiers=[
@@ -24,20 +25,22 @@ setup(
 
     author='Mmdrza',
 
+    keywords=['bitcoin', 'cryptography', 'python', 'library', 'crypto', 'libit', 'ethereum', 'tron'],
+
     include_package_data=True,
 
     author_email='Pymmdrza@gmail.com',
 
-    description='libit package for python convert and generate wallet',
+    description='Library Bitcoin package for python convert and generate wallet',
 
-    url='https://github.com/libit',
+    url='https://github.com/pylibit',
 
     project_urls={
-        'Bug Tracker': 'https://github.com/libit/issues',
+        'Bug Tracker': 'https://github.com/pylibit/issues',
 
-        'Source Code': 'https://github.com/libit/libit',
+        'Source Code': 'https://github.com/pylibit/libit',
 
-        'Documentation': 'https://libit.github.com/libit/',
+        'Documentation': 'https://pylibit.github.io/libit/',
 
         'Website': 'https://mmdrza.com',
 
