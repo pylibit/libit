@@ -12,7 +12,7 @@ def double_sha256(data):
     return hashlib.sha256(hashlib.sha256(data).digest()).digest()
 
 
-def bytes_to_wif(private_key, compress=True):
+def bytes_to_wif(private_key, compress=True) -> str:
     if compress:
         EXTENDED_KEY = MAIN_PREFIX + private_key + MAIN_SUFFIX
     else:
@@ -185,18 +185,10 @@ def bytes_wif(seed: bytes, compress: bool = False) -> str:
         compress:
 
     Returns:
-        wif:
-
-    -------------------------------------------------------
-
-    >>> seed = b"example 32 bytes"
-    >>> wif = bytes_wif(seed)
-    >>> wif_compress = bytes_wif(seed, True)
-
-    --------------------------------------------------------
+        wif
 
     """
-    return bytes_to_wif(compress)
+    return bytes_to_wif(seed, compress)
 
 
 def hex_bytes(hex_string: str) -> bytes:
@@ -207,14 +199,7 @@ def hex_bytes(hex_string: str) -> bytes:
         hex_string:
 
     Returns:
-        bytes:
-
-    -------------------------------------------------------
-
-    >>> hex_string = "12345567890abcdef..1234567890abcdef"
-    >>> bytes = hex_bytes(hex_string)
-
-    --------------------------------------------------------
+        bytes
 
     """
     return bytes.fromhex(hex_string)
@@ -228,15 +213,7 @@ def privatekey_wif(privateHex: str, compress: bool = False) -> str:
         compress:
 
     Returns:
-        wif:
-
-    -------------------------------------------------------
-
-    >>> privateHex = "12345567890abcdef..1234567890abcdef"
-    >>> wif = privatekey_wif(privateHex)
-
-    --------------------------------------------------------
-
+        wif
     """
     seed = hex_to_bytes(privateHex)
     return bytes_to_wif(seed, compress)
@@ -250,14 +227,7 @@ def privatekey_decimal(privateHex: str) -> int:
         privateHex:
 
     Returns:
-        int:
-
-    -------------------------------------------------------
-
-    >>> privateHex = "12345567890abcdef..1234567890abcdef"
-    >>> decimal = privatekey_decimal(privateHex)
-
-    --------------------------------------------------------
+        int
     """
     return int(privateHex, 16)
 
@@ -270,11 +240,7 @@ def bytes_addr(seed: bytes, compress: bool = False) -> str:
         compress:
 
     Returns:
-        addr:
-
-    >>> seed_bytes = "HERE BYTES 32"
-    >>> compress_address = bytes_addr(seed_bytes, True)
-    >>> uncompress_address = bytes_addr(seed_bytes)
+        addr
     """
     pb = bytes_to_public(seed, compress)
     return pub_to_addr(pb)
@@ -288,15 +254,7 @@ def wif_addr(wif: str, compress: bool = False) -> str:
         compress:
 
     Returns:
-        addr:
-
-    -------------------------------------------------------
-
-    >>> wif = "5KMnkl,,,,,,MNadh"
-    >>> compress_address = wif_addr(wif, True)
-    >>> uncompress_address = wif_addr(wif)
-
-    -------------------------------------------------------
+        addr
     """
     seed = wif_to_bytes(wif)
     return bytes_addr(seed, compress)
@@ -310,11 +268,7 @@ def privatekey_addr(hex_string: str, compress: bool = False) -> str:
         compress:
 
     Returns:
-        addr:
-
-    >>> hex_string = "12345567890abcdef..1234567890abcdef"
-    >>> compress_address = privatekey_addr(hex_string, True)
-    >>> uncompress_address = privatekey_addr(hex_string)
+        addr
     """
     seed = hex_bytes(hex_string)
     return bytes_addr(seed, compress)
@@ -328,11 +282,7 @@ def passphrase_addr(passphrase: str, compress: bool = False) -> str:
         compress:
 
     Returns:
-        addr:
-
-    >>> passphrase = "Mmdrza.Com"
-    >>> compress_address = passphrase_addr(passphrase, True)
-    >>> uncompress_address = passphrase_addr(passphrase)
+        addr
     """
     return pass_to_addr(passphrase,compress)
 
@@ -345,11 +295,7 @@ def dec_addr(dec: int, compress: bool = False) -> str:
         compress:
 
     Returns:
-        addr:
-
-    >>> dec = 12345567890
-    >>> compress_address = dec_addr(dec, True)
-    >>> uncompress_address = dec_addr(dec)
+        addr
     """
     seed = int_to_bytes(dec)
     return bytes_addr(seed, compress)
@@ -362,10 +308,7 @@ def bytes_eth(seed: bytes) -> str:
         seed:
 
     Returns:
-        eth_addr:
-
-    >>> seed_bytes = "HERE BYTES 32"
-    >>> eth_address = bytes_eth(seed_bytes)
+        eth_addr
     """
     return eth_addr(bytes_to_hex(seed))
 
@@ -377,10 +320,7 @@ def eth_addr(hex_string: str):
         hex_string:
 
     Returns:
-        eth_addr:
-
-    >>> hex_string = "12345567890abcdef..1234567890abcdef"
-    >>> eth_address = eth_addr(hex_string)
+        eth_addr
 
     """
     return ethereum.hex_to_eth(hex_string)
@@ -393,10 +333,7 @@ def dec_eth(dec: int) -> str:
         dec:
 
     Returns:
-        eth_addr:
-
-    >>> dec = 12345567890
-    >>> eth_address = dec_eth(dec)
+        eth_addr
     """
     return eth_addr(int_to_hex(dec))
 
@@ -408,10 +345,7 @@ def bytes_trx(seed: bytes) -> str:
         seed:
 
     Returns:
-        trx_addr:
-
-    >>> seed_bytes = "HERE BYTES 32"
-    >>> trx_address = bytes_trx(seed_bytes)
+        trx_addr
 
     """
     return trx_addr(bytes_to_hex(seed))
@@ -424,10 +358,7 @@ def trx_addr(hex_string: str):
         hex_string:
 
     Returns:
-        trx_addr:
-
-    >>> hex_string = "12345567890abcdef..1234567890abcdef"
-    >>> trx_address = trx_addr(hex_string)
+        trx_addr
 
     """
     return tron.hex_to_tron(hex_string)
@@ -440,10 +371,7 @@ def dec_trx(dec: int) -> str:
         dec:
 
     Returns:
-        trx_addr:
-
-    >>> dec = 12345567890
-    >>> tron_address = dec_trx(dec)
+        trx_addr
 
     """
     return trx_addr(int_to_hex(dec))
