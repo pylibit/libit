@@ -12,6 +12,10 @@ def double_sha256(data):
     return hashlib.sha256(hashlib.sha256(data).digest()).digest()
 
 
+def sha256_hex(data):
+    return hashlib.sha256(bytes.fromhex(data)).hexdigest()
+
+
 def bytes_to_wif(private_key, compress=True) -> str:
     if compress:
         EXTENDED_KEY = MAIN_PREFIX + private_key + MAIN_SUFFIX
@@ -48,10 +52,7 @@ def to_hex(data: str) -> str:
         data:
 
     Returns:
-        hexed:
-
-    >>> data = "Mmdrza.Com"
-    >>> hexed = to_hex(data)
+        hexed
     """
     data = data.encode()
     dt256 = hashlib.sha256(data)
@@ -121,59 +122,87 @@ def wif_to_bytes(wif) -> bytes:
         wif:
 
     Returns:
-        bytes:
-
-    >>> wif = "5KMnkl,,,,,,MNadh"
-    >>> bytes = wif_to_bytes(wif)
+        bytes
     """
     wif_bytes = b58decode(wif)
     isCompress = wif_bytes[-5] == 0x01 if len(wif_bytes) == 38 else False
     return wif_bytes[1:-5] if isCompress else wif_bytes[1:-4]
 
 
-class ethereum:
-    def __int__(self):
-        super().__init__()
+def hex_to_eth(key_string):
+    keybytes = bytes.fromhex(key_string)
+    sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)
+    key = sk.get_verifying_key()
+    KEY = key.to_string()
+    Keccak = keccak.new(digest_bits=256)
+    Keccak.update(KEY)
+    pub_key = Keccak.digest()
+    primitive_addr = b'\4' + pub_key[-20:]
+    hashaddr = primitive_addr.hex()
+    chkSum = hashaddr[0:2]
+    if hashaddr[0:2] == "04":
+        return "0x" + hashaddr[2:]
+    else:
+        raise ValueError("hash address format is invalid.")
 
-    def hex_to_eth(self, key_string):
 
-        keybytes = bytes.fromhex(key_string)
+class Ethereum:
+    def __init__(self, private_key: str):
+        self.private_key = private_key
 
-        sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)
-        key = sk.get_verifying_key()
-        KEY = key.to_string()
-        Keccak = keccak.new(digest_bits=256)
-        Keccak.update(KEY)
-        pub_key = Keccak.digest()
-        primitive_addr = b'\4' + pub_key[-20:]
-        hashaddr = primitive_addr.hex()
-        chkSum = hashaddr[0:2]
-        if hashaddr[0:2] == "04":
-            return "0x" + hashaddr[2:]
-        else:
-            raise ValueError("hash address format is invalid.")
+    def get_address(self) -> str:
+        return hex_to_eth(self.private_key)
+
+    def get_decimal(self) -> int:
+        return int(self.private_key, 16)
+
+    def get_seed(self) -> bytes:
+        return bytes.fromhex(self.private_key)
+
+    def get_hexAddress(self) -> str:
+        return self.private_key
+
+
+
+
+def hex_to_tron(key_string):
+    keybytes = bytes.fromhex(key_string)
+    sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)
+    key = sk.get_verifying_key()
+    KEY = key.to_string()
+    Keccak = keccak.new(digest_bits=256)
+    Keccak.update(KEY)
+    pub_key = Keccak.digest()
+    primitive_addr = b'\x41' + pub_key[-20:]
+    addr = b58encode_check(primitive_addr)
+    return addr.decode()
+
+
+def hex_addr_tron(address: str):
+    return b58decode(address).hex()[:-8]
 
 
 class tron:
-    def __init__(self):
-        super().__init__()
+    def __init__(self, private_key: str):
+        self.private_key = private_key
 
-    def hex_to_tron(self, key_string):
-        keybytes = bytes.fromhex(key_string)
+    def get_address(self) -> str:
+        return hex_to_tron(self.private_key)
 
-        sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)
-        key = sk.get_verifying_key()
-        KEY = key.to_string()
-        Keccak = keccak.new(digest_bits=256)
-        Keccak.update(KEY)
-        pub_key = Keccak.digest()
-        primitive_addr = b'\x41' + pub_key[-20:]
-        addr = b58encode_check(primitive_addr)
-        return addr.decode()
+    def get_decimal(self) -> int:
+        return int(self.private_key, 16)
 
+    def get_seed(self) -> bytes:
+        return bytes.fromhex(self.private_key)
 
-tron = tron()
-ethereum = ethereum()
+    def get_hexAddress(self) -> str:
+        address = tron(self.private_key).get_address()
+        return hex_addr_tron(address)
+
+    def get_evmAddress(self) -> str:
+        """  return hex address like ethereum address wallet """
+        hex_addr = tron(self.private_key).get_hexAddress()
+        return "0x" + hex_addr[2:]
 
 
 def bytes_wif(seed: bytes, compress: bool = False) -> str:
@@ -284,7 +313,7 @@ def passphrase_addr(passphrase: str, compress: bool = False) -> str:
     Returns:
         addr
     """
-    return pass_to_addr(passphrase,compress)
+    return pass_to_addr(passphrase, compress)
 
 
 def dec_addr(dec: int, compress: bool = False) -> str:
@@ -348,7 +377,8 @@ def bytes_trx(seed: bytes) -> str:
         trx_addr
 
     """
-    return trx_addr(bytes_to_hex(seed))
+    trx = tron(bytes_to_hex(seed))
+    return trx.get_address()
 
 
 def trx_addr(hex_string: str):
@@ -361,7 +391,8 @@ def trx_addr(hex_string: str):
         trx_addr
 
     """
-    return tron.hex_to_tron(hex_string)
+    trx = tron(hex_string)
+    return trx.address()
 
 
 def dec_trx(dec: int) -> str:
@@ -374,4 +405,37 @@ def dec_trx(dec: int) -> str:
         trx_addr
 
     """
-    return trx_addr(int_to_hex(dec))
+    trx = tron(int_to_hex(dec))
+    return trx.get_address()
+
+
+def trx_hash(address: str):
+    """
+
+    Args:
+        address:
+
+    Returns:
+        trx_addr
+
+    """
+    if address[0] == "T":
+        return hex_addr_tron(address)
+    else:
+        return "check address format"
+
+
+def trx_hex(address: str):
+    """
+
+    Args:
+        address:
+
+    Returns:
+        trx_addr
+
+    """
+    if address[0] == "T":
+        return "0x" + hex_addr_tron(address)[2:]
+    else:
+        return "check address format"

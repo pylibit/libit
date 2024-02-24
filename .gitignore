@@ -13,3 +13,6 @@ build/lib/libit1/bs58.py
 build/lib/libit1/asset.py
 build/lib/libit1/__init__.py
 dist/libit-1.6.3.tar.gz
+libit/__pycache__/__init__.cpython-38.pyc
+libit/__pycache__/asset.cpython-38.pyc
+*.pyc

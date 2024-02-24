@@ -14,8 +14,22 @@ from .lib import (
     privatekey_decimal,
     privatekey_wif,
     trx_addr,
-    wif_addr
+    wif_addr,
+    Ethereum,
+    tron
 )
+from .Tron import Wallet
+from .reuse import extract_key
+from . import reuse
+
+# tron address from private key hex format
+tronAddress = Wallet.get_address
+# tron address to hash string format
+tronHash = Wallet.get_hashAddress
+# tron address to hex string format (evm)
+tronHex = Wallet.get_hexAddress
+# private key to tron decimal format
+tronDec = Wallet.get_decimal
 
 __all__ = [
     "bytes_addr",
@@ -33,5 +47,9 @@ __all__ = [
     "privatekey_decimal",
     "privatekey_wif",
     "trx_addr",
-    "wif_addr"
+    "wif_addr",
+    "Ethereum",
+    # REUSED FUNCTIONS
+    "extract_key",
+    "reuse"
 ]
