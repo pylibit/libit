@@ -64,6 +64,11 @@ jobs:
   
     - name: Remove Bump Script
       run: rm -r bump_version.py
+
+    - name: Update Index Page For Readthedocs
+      run: |
+          mkdir -p docs
+          cp README.md docs/index.md
       
     - name: Bump version
       run: |
@@ -137,14 +142,6 @@ jobs:
           dist/libit-${{ env.NEW_VERSION }}.tar.gz
           dist/libit-${{ env.NEW_VERSION }}-py3-none-any.whl
           
-    - name: Update Index Page For Readthedocs
-      run: |
-          mkdir -p docs
-          cp README.md docs/index.md
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
-        keep_files: true
+    
+   
             
