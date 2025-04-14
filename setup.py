@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='libit',
-    version="4.0.6",
+    version="4.3.0",
     license='http://opensource.org/licenses/MIT',
     packages=find_packages(),
     install_requires=[

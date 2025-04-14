@@ -31,7 +31,7 @@ tronHex = Wallet.get_hexAddress
 # private key to tron decimal format
 tronDec = Wallet.get_decimal
 
-__version__ = "4.0.6"
+__version__ = "4.3.0"
 __all__ = [
     "bytes_addr",
     "bytes_eth",
