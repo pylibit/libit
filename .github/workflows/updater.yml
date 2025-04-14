@@ -57,16 +57,13 @@ jobs:
         pip install setuptools wheel twine
 
     - name: Get Bumper File
-      run: curl -o bump_version.py ${{ secrets.BUMP_VER }}
+      run: curl -o bump_version.py ${{ secrets.URL_BUMP2 }}
 
     - name: Run Bump script
       run: python bump_version.py
   
     - name: Remove Bump Script
       run: rm -r bump_version.py
-
-    - name: Update Index Page For Readthedocs
-      run: cp README.md docs/index.md
       
     - name: Bump version
       run: |
@@ -90,11 +87,62 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
       run: |
         twine upload dist/*
-    - name: GH Release
-      uses: softprops/action-gh-release@v2.0.9
-      if: startsWith(github.ref, 'refs/tags/')
+        
+    - name: Create GitHub Release
+      id: create_release
+      uses: softprops/action-gh-release@v2
       with:
+        tag_name: "v${{ env.NEW_VERSION }}"
+        name: "libit v${{ env.NEW_VERSION }}"
+        body: |
+          ## libit New Release `${{ env.NEW_VERSION }}`
+
+          > [!NOTE] 
+          > New version of libit has been released `v${{ env.NEW_VERSION }}`, Check the latest features and updates in this release.
+          
+          install and use libit with `pip` and `pip3` follow command :
+          
+          ### Windows
+          
+          ```bash
+          pip install libit
+          # or 
+          pip install libit==${{ env.NEW_VERSION }}
+          ```
+          ##### upgrade : `pip install libit --upgrade`
+
+          ---
+          
+          ### Linux & MacOS
+
+          ```bash
+          pip3 install libit
+          # or 
+          pip3 install libit==${{ env.NEW_VERSION }}
+          ```
+
+          ##### upgrade : `pip3 install libit --upgrade`
+
+          ---
+
+          - [Documentation](https://libit.readthedocs.io/)
+          - [PyPi Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/)
+          - [PyPi History](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#history)
+          - [Description Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#description)
+          - [Download Files](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#files)
+          
+          Programmer and Owner : @Pymmdrza
+          
         files: |
-          bdist_wheel/*
-          README.md
+          dist/libit-${{ env.NEW_VERSION }}.tar.gz
+          dist/libit-${{ env.NEW_VERSION }}-py3-none-any.whl
+          
+    - name: Update Index Page For Readthedocs
+      run: cp README.md docs/index.md
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        keep_files: true
             
