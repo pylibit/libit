@@ -138,7 +138,9 @@ jobs:
           dist/libit-${{ env.NEW_VERSION }}-py3-none-any.whl
           
     - name: Update Index Page For Readthedocs
-      run: cp README.md docs/index.md
+      run: |
+          mkdir -p docs
+          cp README.md docs/index.md
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
