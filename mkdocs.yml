@@ -3,7 +3,7 @@ site_author: 'Pymmdrza@gmail.com'
 repo_url: 'https://github.com/pylibit/libit'
 # edit_uri: '?query=root/path/docs/'
 site_description: 'Generated and Convereted any Private Key and Mnemonic , WIF , Decimal Security Bitcoin Wallet , Ethereum, Tron '
-# site_url: 'https://pylibit.github.io/Rich-Address-Wallet'
+site_url: !ENV READTHEDOCS_CANONICAL_URL
 copyright: 'Copyright © 2025, Pymmdrza'
 
 nav:
