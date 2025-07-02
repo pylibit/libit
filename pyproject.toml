@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libit"
+version = "5.0.0"
+description = "Professional Bitcoin, Ethereum and Tron wallet generation library with support for multiple address formats"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mmdrza", email = "Pymmdrza@gmail.com"},
+]
+maintainers = [
+    {name = "Mmdrza", email = "Pymmdrza@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Office/Business :: Financial",
+]
+keywords = [
+    "bitcoin", "ethereum", "tron", "cryptography", "wallet", 
+    "cryptocurrency", "blockchain", "private-key", "address",
+    "p2pkh", "p2sh", "p2wpkh", "p2wsh", "segwit", "bech32"
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pycryptodome>=3.15.0",
+    "ecdsa>=0.18.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=0.991",
+]
+docs = [
+    "sphinx>=5.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+]
+enhanced = [
+    "mnemonic>=0.20",
+    "hdwallet>=2.2.1",
+    "qrcode>=7.3.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/pylibit/libit"
+Documentation = "https://pylibit.github.io/libit/"
+Repository = "https://github.com/pylibit/libit"
+"Bug Tracker" = "https://github.com/pylibit/libit/issues"
+Changelog = "https://github.com/pylibit/libit/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["libit*"]
+exclude = ["tests*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests.py"]
+python_files = ["test_*.py", "*_test.py", "tests.py"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--disable-warnings",
+]

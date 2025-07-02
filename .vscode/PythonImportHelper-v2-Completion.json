@@ -1,0 +1,1424 @@
+[
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "sha256",
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "isExtraImport": true,
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "struct",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "struct",
+        "description": "struct",
+        "detail": "struct",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Mapping",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ecdsa",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ecdsa",
+        "description": "ecdsa",
+        "detail": "ecdsa",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "unhexlify",
+        "importPath": "binascii",
+        "description": "binascii",
+        "isExtraImport": true,
+        "detail": "binascii",
+        "documentation": {}
+    },
+    {
+        "label": "hexlify",
+        "importPath": "binascii",
+        "description": "binascii",
+        "isExtraImport": true,
+        "detail": "binascii",
+        "documentation": {}
+    },
+    {
+        "label": "keccak",
+        "importPath": "Crypto.Hash",
+        "description": "Crypto.Hash",
+        "isExtraImport": true,
+        "detail": "Crypto.Hash",
+        "documentation": {}
+    },
+    {
+        "label": "keccak",
+        "importPath": "Crypto.Hash",
+        "description": "Crypto.Hash",
+        "isExtraImport": true,
+        "detail": "Crypto.Hash",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib.",
+        "description": "hashlib.",
+        "detail": "hashlib.",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "secrets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "secrets",
+        "description": "secrets",
+        "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Bitcoin",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "generate_bitcoin_wallet",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "generate_multi_wallet",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_all_addresses",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "AddressValidator",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "WalletGenerator",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "BulkWalletGenerator",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "Bitcoin",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "WalletGenerator",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "AddressValidator",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "generate_bitcoin_wallet",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_all_addresses",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_private_key",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "format_private_key",
+        "importPath": "libit",
+        "description": "libit",
+        "isExtraImport": true,
+        "detail": "libit",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "BITCOIN_ALPHABET",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "BITCOIN_ALPHABET = b'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'\nRIPPLE_ALPHABET = b'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz'\nBIP39 = \"AbandonAbilityAbleAboutAboveAbsentAbsorbAbstractAbsurdAbuseAccessAccidentAccountAccuseAchieveAcidAcousticAcquireAcrossActActionActorActressActualAdaptAddAddictAddressAdjustAdmitAdultAdvanceAdviceAerobicAffairAffordAfraidAgainAgeAgentAgreeAheadAimAirAirportAisleAlarmAlbumAlcoholAlertAlienAllAlleyAllowAlmostAloneAlphaAlreadyAlsoAlterAlwaysAmateurAmazingAmongAmountAmusedAnalystAnchorAncientAngerAngleAngryAnimalAnkleAnnounceAnnualAnotherAnswerAntennaAntiqueAnxietyAnyApartApologyAppearAppleApproveAprilArchArcticAreaArenaArgueArmArmedArmorArmyAroundArrangeArrestArriveArrowArtArtefactArtistArtworkAskAspectAssaultAssetAssistAssumeAsthmaAthleteAtomAttackAttendAttitudeAttractAuctionAuditAugustAuntAuthorAutoAutumnAverageAvocadoAvoidAwakeAwareAwayAwesomeAwfulAwkwardAxisBabyBachelorBaconBadgeBagBalanceBalconyBallBambooBananaBannerBarBarelyBargainBarrelBaseBasicBasketBattleBeachBeanBeautyBecauseBecomeBeefBeforeBeginBehaveBehindBelieveBelowBeltBenchBenefitBestBetrayBetterBetweenBeyondBicycleBidBikeBindBiologyBirdBirthBitterBlackBladeBlameBlanketBlastBleakBlessBlindBloodBlossomBlouseBlueBlurBlushBoardBoatBodyBoilBombBoneBonusBookBoostBorderBoringBorrowBossBottomBounceBoxBoyBracketBrainBrandBrassBraveBreadBreezeBrickBridgeBriefBrightBringBriskBroccoliBrokenBronzeBroomBrotherBrownBrushBubbleBuddyBudgetBuffaloBuildBulbBulkBulletBundleBunkerBurdenBurgerBurstBusBusinessBusyButterBuyerBuzzCabbageCabinCableCactusCageCakeCallCalmCameraCampCanCanalCancelCandyCannonCanoeCanvasCanyonCapableCapitalCaptainCarCarbonCardCargoCarpetCarryCartCaseCashCasinoCastleCasualCatCatalogCatchCategoryCattleCaughtCauseCautionCaveCeilingCeleryCementCensusCenturyCerealCertainChairChalkChampionChangeChaosChapterChargeChaseChatCheapCheckCheeseChefCherryChestChickenChiefChildChimneyChoiceChooseChronicChuckleChunkChurnCigarCinnamonCircleCitizenCityCivilClaimClapClarifyClawClayCleanClerkCleverClickClientCliffClimbClinicClipClockClogCloseClothCloudClownClubClumpClusterClutchCoachCoastCoconutCodeCoffeeCoilCoinCollectColorColumnCombineComeComfortComicCommonCompanyConcertConductConfirmCongressConnectConsiderControlConvinceCookCoolCopperCopyCoralCoreCornCorrectCostCottonCouchCountryCoupleCourseCousinCoverCoyoteCrackCradleCraftCramCraneCrashCraterCrawlCrazyCreamCreditCreekCrewCricketCrimeCrispCriticCropCrossCrouchCrowdCrucialCruelCruiseCrumbleCrunchCrushCryCrystalCubeCultureCupCupboardCuriousCurrentCurtainCurveCushionCustomCuteCycleDadDamageDampDanceDangerDaringDashDaughterDawnDayDealDebateDebrisDecadeDecemberDecideDeclineDecorateDecreaseDeerDefenseDefineDefyDegreeDelayDeliverDemandDemiseDenialDentistDenyDepartDependDepositDepthDeputyDeriveDescribeDesertDesignDeskDespairDestroyDetailDetectDevelopDeviceDevoteDiagramDialDiamondDiaryDiceDieselDietDifferDigitalDignityDilemmaDinnerDinosaurDirectDirtDisagreeDiscoverDiseaseDishDismissDisorderDisplayDistanceDivertDivideDivorceDizzyDoctorDocumentDogDollDolphinDomainDonateDonkeyDonorDoorDoseDoubleDoveDraftDragonDramaDrasticDrawDreamDressDriftDrillDrinkDripDriveDropDrumDryDuckDumbDuneDuringDustDutchDutyDwarfDynamicEagerEagleEarlyEarnEarthEasilyEastEasyEchoEcologyEconomyEdgeEditEducateEffortEggEightEitherElbowElderElectricElegantElementElephantElevatorEliteElseEmbarkEmbodyEmbraceEmergeEmotionEmployEmpowerEmptyEnableEnactEndEndlessEndorseEnemyEnergyEnforceEngageEngineEnhanceEnjoyEnlistEnoughEnrichEnrollEnsureEnterEntireEntryEnvelopeEpisodeEqualEquipEraEraseErodeErosionErrorEruptEscapeEssayEssenceEstateEternalEthicsEvidenceEvilEvokeEvolveExactExampleExcessExchangeExciteExcludeExcuseExecuteExerciseExhaustExhibitExileExistExitExoticExpandExpectExpireExplainExposeExpressExtendExtraEyeEyebrowFabricFaceFacultyFadeFaintFaithFallFalseFameFamilyFamousFanFancyFantasyFarmFashionFatFatalFatherFatigueFaultFavoriteFeatureFebruaryFederalFeeFeedFeelFemaleFenceFestivalFetchFeverFewFiberFictionFieldFigureFileFilmFilterFinalFindFineFingerFinishFireFirmFirstFiscalFishFitFitnessFixFlagFlameFlashFlatFlavorFleeFlightFlipFloatFlockFloorFlowerFluidFlushFlyFoamFocusFogFoilFoldFollowFoodFootForceForestForgetForkFortuneForumForwardFossilFosterFoundFoxFragileFrameFrequentFreshFriendFringeFrogFrontFrostFrownFrozenFruitFuelFunFunnyFurnaceFuryFutureGadgetGainGalaxyGalleryGameGapGarageGarbageGardenGarlicGarmentGasGaspGateGatherGaugeGazeGeneralGeniusGenreGentleGenuineGestureGhostGiantGiftGiggleGingerGiraffeGirlGiveGladGlanceGlareGlassGlideGlimpseGlobeGloomGloryGloveGlowGlueGoatGoddessGoldGoodGooseGorillaGospelGossipGovernGownGrabGraceGrainGrantGrapeGrassGravityGreatGreenGridGriefGritGroceryGroupGrowGruntGuardGuessGuideGuiltGuitarGunGymHabitHairHalfHammerHamsterHandHappyHarborHardHarshHarvestHatHaveHawkHazardHeadHealthHeartHeavyHedgehogHeightHelloHelmetHelpHenHeroHiddenHighHillHintHipHireHistoryHobbyHockeyHoldHoleHolidayHollowHomeHoneyHoodHopeHornHorrorHorseHospitalHostHotelHourHoverHubHugeHumanHumbleHumorHundredHungryHuntHurdleHurryHurtHusbandHybridIceIconIdeaIdentifyIdleIgnoreIllIllegalIllnessImageImitateImmenseImmuneImpactImposeImproveImpulseInchIncludeIncomeIncreaseIndexIndicateIndoorIndustryInfantInflictInformInhaleInheritInitialInjectInjuryInmateInnerInnocentInputInquiryInsaneInsectInsideInspireInstallIntactInterestIntoInvestInviteInvolveIronIslandIsolateIssueItemIvoryJacketJaguarJarJazzJealousJeansJellyJewelJobJoinJokeJourneyJoyJudgeJuiceJumpJungleJuniorJunkJustKangarooKeenKeepKetchupKeyKickKidKidneyKindKingdomKissKitKitchenKiteKittenKiwiKneeKnifeKnockKnowLabLabelLaborLadderLadyLakeLampLanguageLaptopLargeLaterLatinLaughLaundryLavaLawLawnLawsuitLayerLazyLeaderLeafLearnLeaveLectureLeftLegLegalLegendLeisureLemonLendLengthLensLeopardLessonLetterLevelLiarLibertyLibraryLicenseLifeLiftLightLikeLimbLimitLinkLionLiquidListLittleLiveLizardLoadLoanLobsterLocalLockLogicLonelyLongLoopLotteryLoudLoungeLoveLoyalLuckyLuggageLumberLunarLunchLuxuryLyricsMachineMadMagicMagnetMaidMailMainMajorMakeMammalManManageMandateMangoMansionManualMapleMarbleMarchMarginMarineMarketMarriageMaskMassMasterMatchMaterialMathMatrixMatterMaximumMazeMeadowMeanMeasureMeatMechanicMedalMediaMelodyMeltMemberMemoryMentionMenuMercyMergeMeritMerryMeshMessageMetalMethodMiddleMidnightMilkMillionMimicMindMinimumMinorMinuteMiracleMirrorMiseryMissMistakeMixMixedMixtureMobileModelModifyMomMomentMonitorMonkeyMonsterMonthMoonMoralMoreMorningMosquitoMotherMotionMotorMountainMouseMoveMovieMuchMuffinMuleMultiplyMuscleMuseumMushroomMusicMustMutualMyselfMysteryMythNaiveNameNapkinNarrowNastyNationNatureNearNeckNeedNegativeNeglectNeitherNephewNerveNestNetNetworkNeutralNeverNewsNextNiceNightNobleNoiseNomineeNoodleNormalNorthNoseNotableNoteNothingNoticeNovelNowNuclearNumberNurseNutOakObeyObjectObligeObscureObserveObtainObviousOccurOceanOctoberOdorOffOfferOfficeOftenOilOkayOldOliveOlympicOmitOnceOneOnionOnlineOnlyOpenOperaOpinionOpposeOptionOrangeOrbitOrchardOrderOrdinaryOrganOrientOriginalOrphanOstrichOtherOutdoorOuterOutputOutsideOvalOvenOverOwnOwnerOxygenOysterOzonePactPaddlePagePairPalacePalmPandaPanelPanicPantherPaperParadeParentParkParrotPartyPassPatchPathPatientPatrolPatternPausePavePaymentPeacePeanutPearPeasantPelicanPenPenaltyPencilPeoplePepperPerfectPermitPersonPetPhonePhotoPhrasePhysicalPianoPicnicPicturePiecePigPigeonPillPilotPinkPioneerPipePistolPitchPizzaPlacePlanetPlasticPlatePlayPleasePledgePluckPlugPlungePoemPoetPointPolarPolePolicePondPonyPoolPopularPortionPositionPossiblePostPotatoPotteryPovertyPowderPowerPracticePraisePredictPreferPreparePresentPrettyPreventPricePridePrimaryPrintPriorityPrisonPrivatePrizeProblemProcessProduceProfitProgramProjectPromoteProofPropertyProsperProtectProudProvidePublicPuddingPullPulpPulsePumpkinPunchPupilPuppyPurchasePurityPurposePursePushPutPuzzlePyramidQualityQuantumQuarterQuestionQuickQuitQuizQuoteRabbitRaccoonRaceRackRadarRadioRailRainRaiseRallyRampRanchRandomRangeRapidRareRateRatherRavenRawRazorReadyRealReasonRebelRebuildRecallReceiveRecipeRecordRecycleReduceReflectReformRefuseRegionRegretRegularRejectRelaxReleaseReliefRelyRemainRememberRemindRemoveRenderRenewRentReopenRepairRepeatReplaceReportRequireRescueResembleResistResourceResponseResultRetireRetreatReturnReunionRevealReviewRewardRhythmRibRibbonRiceRichRideRidgeRifleRightRigidRingRiotRippleRiskRitualRivalRiverRoadRoastRobotRobustRocketRomanceRoofRookieRoomRoseRotateRoughRoundRouteRoyalRubberRudeRugRuleRunRunwayRuralSadSaddleSadnessSafeSailSaladSalmonSalonSaltSaluteSameSampleSandSatisfySatoshiSauceSausageSaveSayScaleScanScareScatterSceneSchemeSchoolScienceScissorsScorpionScoutScrapScreenScriptScrubSeaSearchSeasonSeatSecondSecretSectionSecuritySeedSeekSegmentSelectSellSeminarSeniorSenseSentenceSeriesServiceSessionSettleSetupSevenShadowShaftShallowShareShedShellSheriffShieldShiftShineShipShiverShockShoeShootShopShortShoulderShoveShrimpShrugShuffleShySiblingSickSideSiegeSightSignSilentSilkSillySilverSimilarSimpleSinceSingSirenSisterSituateSixSizeSkateSketchSkiSkillSkinSkirtSkullSlabSlamSleepSlenderSliceSlideSlightSlimSloganSlotSlowSlushSmallSmartSmileSmokeSmoothSnackSnakeSnapSniffSnowSoapSoccerSocialSockSodaSoftSolarSoldierSolidSolutionSolveSomeoneSongSoonSorrySortSoulSoundSoupSourceSouthSpaceSpareSpatialSpawnSpeakSpecialSpeedSpellSpendSphereSpiceSpiderSpikeSpinSpiritSplitSpoilSponsorSpoonSportSpotSpraySpreadSpringSpySquareSqueezeSquirrelStableStadiumStaffStageStairsStampStandStartStateStaySteakSteelStemStepStereoStickStillStingStockStomachStoneStoolStoryStoveStrategyStreetStrikeStrongStruggleStudentStuffStumbleStyleSubjectSubmitSubwaySuccessSuchSuddenSufferSugarSuggestSuitSummerSunSunnySunsetSuperSupplySupremeSureSurfaceSurgeSurpriseSurroundSurveySuspectSustainSwallowSwampSwapSwarmSwearSweetSwiftSwimSwingSwitchSwordSymbolSymptomSyrupSystemTableTackleTagTailTalentTalkTankTapeTargetTaskTasteTattooTaxiTeachTeamTellTenTenantTennisTentTermTestTextThankThatThemeThenTheoryThereTheyThingThisThoughtThreeThriveThrowThumbThunderTicketTideTigerTiltTimberTimeTinyTipTiredTissueTitleToastTobaccoTodayToddlerToeTogetherToiletTokenTomatoTomorrowToneTongueTonightToolToothTopTopicToppleTorchTornadoTortoiseTossTotalTouristTowardTowerTownToyTrackTradeTrafficTragicTrainTransferTrapTrashTravelTrayTreatTreeTrendTrialTribeTrickTriggerTrimTripTrophyTroubleTruckTrueTrulyTrumpetTrustTruthTryTubeTuitionTumbleTunaTunnelTurkeyTurnTurtleTwelveTwentyTwiceTwinTwistTwoTypeTypicalUglyUmbrellaUnableUnawareUncleUncoverUnderUndoUnfairUnfoldUnhappyUniformUniqueUnitUniverseUnknownUnlockUntilUnusualUnveilUpdateUpgradeUpholdUponUpperUpsetUrbanUrgeUsageUseUsedUsefulUselessUsualUtilityVacantVacuumVagueValidValleyValveVanVanishVaporVariousVastVaultVehicleVelvetVendorVentureVenueVerbVerifyVersionVeryVesselVeteranViableVibrantViciousVictoryVideoViewVillageVintageViolinVirtualVirusVisaVisitVisualVitalVividVocalVoiceVoidVolcanoVolumeVoteVoyageWageWagonWaitWalkWallWalnutWantWarfareWarmWarriorWashWaspWasteWaterWaveWayWealthWeaponWearWeaselWeatherWebWeddingWeekendWeirdWelcomeWestWetWhaleWhatWheatWheelWhenWhereWhipWhisperWideWidthWifeWildWillWinWindowWineWingWinkWinnerWinterWireWisdomWiseWishWitnessWolfWomanWonderWoodWoolWordWorkWorldWorryWorthWrapWreckWrestleWristWriteWrongYardYearYellowYouYoungYouthZebraZeroZoneZoo\"\nBASE58_ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'\nZERO_BASE_NET = \"0000000000000000000000000000000000000000000000000000000000000000\"\nZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "RIPPLE_ALPHABET",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "RIPPLE_ALPHABET = b'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz'\nBIP39 = \"AbandonAbilityAbleAboutAboveAbsentAbsorbAbstractAbsurdAbuseAccessAccidentAccountAccuseAchieveAcidAcousticAcquireAcrossActActionActorActressActualAdaptAddAddictAddressAdjustAdmitAdultAdvanceAdviceAerobicAffairAffordAfraidAgainAgeAgentAgreeAheadAimAirAirportAisleAlarmAlbumAlcoholAlertAlienAllAlleyAllowAlmostAloneAlphaAlreadyAlsoAlterAlwaysAmateurAmazingAmongAmountAmusedAnalystAnchorAncientAngerAngleAngryAnimalAnkleAnnounceAnnualAnotherAnswerAntennaAntiqueAnxietyAnyApartApologyAppearAppleApproveAprilArchArcticAreaArenaArgueArmArmedArmorArmyAroundArrangeArrestArriveArrowArtArtefactArtistArtworkAskAspectAssaultAssetAssistAssumeAsthmaAthleteAtomAttackAttendAttitudeAttractAuctionAuditAugustAuntAuthorAutoAutumnAverageAvocadoAvoidAwakeAwareAwayAwesomeAwfulAwkwardAxisBabyBachelorBaconBadgeBagBalanceBalconyBallBambooBananaBannerBarBarelyBargainBarrelBaseBasicBasketBattleBeachBeanBeautyBecauseBecomeBeefBeforeBeginBehaveBehindBelieveBelowBeltBenchBenefitBestBetrayBetterBetweenBeyondBicycleBidBikeBindBiologyBirdBirthBitterBlackBladeBlameBlanketBlastBleakBlessBlindBloodBlossomBlouseBlueBlurBlushBoardBoatBodyBoilBombBoneBonusBookBoostBorderBoringBorrowBossBottomBounceBoxBoyBracketBrainBrandBrassBraveBreadBreezeBrickBridgeBriefBrightBringBriskBroccoliBrokenBronzeBroomBrotherBrownBrushBubbleBuddyBudgetBuffaloBuildBulbBulkBulletBundleBunkerBurdenBurgerBurstBusBusinessBusyButterBuyerBuzzCabbageCabinCableCactusCageCakeCallCalmCameraCampCanCanalCancelCandyCannonCanoeCanvasCanyonCapableCapitalCaptainCarCarbonCardCargoCarpetCarryCartCaseCashCasinoCastleCasualCatCatalogCatchCategoryCattleCaughtCauseCautionCaveCeilingCeleryCementCensusCenturyCerealCertainChairChalkChampionChangeChaosChapterChargeChaseChatCheapCheckCheeseChefCherryChestChickenChiefChildChimneyChoiceChooseChronicChuckleChunkChurnCigarCinnamonCircleCitizenCityCivilClaimClapClarifyClawClayCleanClerkCleverClickClientCliffClimbClinicClipClockClogCloseClothCloudClownClubClumpClusterClutchCoachCoastCoconutCodeCoffeeCoilCoinCollectColorColumnCombineComeComfortComicCommonCompanyConcertConductConfirmCongressConnectConsiderControlConvinceCookCoolCopperCopyCoralCoreCornCorrectCostCottonCouchCountryCoupleCourseCousinCoverCoyoteCrackCradleCraftCramCraneCrashCraterCrawlCrazyCreamCreditCreekCrewCricketCrimeCrispCriticCropCrossCrouchCrowdCrucialCruelCruiseCrumbleCrunchCrushCryCrystalCubeCultureCupCupboardCuriousCurrentCurtainCurveCushionCustomCuteCycleDadDamageDampDanceDangerDaringDashDaughterDawnDayDealDebateDebrisDecadeDecemberDecideDeclineDecorateDecreaseDeerDefenseDefineDefyDegreeDelayDeliverDemandDemiseDenialDentistDenyDepartDependDepositDepthDeputyDeriveDescribeDesertDesignDeskDespairDestroyDetailDetectDevelopDeviceDevoteDiagramDialDiamondDiaryDiceDieselDietDifferDigitalDignityDilemmaDinnerDinosaurDirectDirtDisagreeDiscoverDiseaseDishDismissDisorderDisplayDistanceDivertDivideDivorceDizzyDoctorDocumentDogDollDolphinDomainDonateDonkeyDonorDoorDoseDoubleDoveDraftDragonDramaDrasticDrawDreamDressDriftDrillDrinkDripDriveDropDrumDryDuckDumbDuneDuringDustDutchDutyDwarfDynamicEagerEagleEarlyEarnEarthEasilyEastEasyEchoEcologyEconomyEdgeEditEducateEffortEggEightEitherElbowElderElectricElegantElementElephantElevatorEliteElseEmbarkEmbodyEmbraceEmergeEmotionEmployEmpowerEmptyEnableEnactEndEndlessEndorseEnemyEnergyEnforceEngageEngineEnhanceEnjoyEnlistEnoughEnrichEnrollEnsureEnterEntireEntryEnvelopeEpisodeEqualEquipEraEraseErodeErosionErrorEruptEscapeEssayEssenceEstateEternalEthicsEvidenceEvilEvokeEvolveExactExampleExcessExchangeExciteExcludeExcuseExecuteExerciseExhaustExhibitExileExistExitExoticExpandExpectExpireExplainExposeExpressExtendExtraEyeEyebrowFabricFaceFacultyFadeFaintFaithFallFalseFameFamilyFamousFanFancyFantasyFarmFashionFatFatalFatherFatigueFaultFavoriteFeatureFebruaryFederalFeeFeedFeelFemaleFenceFestivalFetchFeverFewFiberFictionFieldFigureFileFilmFilterFinalFindFineFingerFinishFireFirmFirstFiscalFishFitFitnessFixFlagFlameFlashFlatFlavorFleeFlightFlipFloatFlockFloorFlowerFluidFlushFlyFoamFocusFogFoilFoldFollowFoodFootForceForestForgetForkFortuneForumForwardFossilFosterFoundFoxFragileFrameFrequentFreshFriendFringeFrogFrontFrostFrownFrozenFruitFuelFunFunnyFurnaceFuryFutureGadgetGainGalaxyGalleryGameGapGarageGarbageGardenGarlicGarmentGasGaspGateGatherGaugeGazeGeneralGeniusGenreGentleGenuineGestureGhostGiantGiftGiggleGingerGiraffeGirlGiveGladGlanceGlareGlassGlideGlimpseGlobeGloomGloryGloveGlowGlueGoatGoddessGoldGoodGooseGorillaGospelGossipGovernGownGrabGraceGrainGrantGrapeGrassGravityGreatGreenGridGriefGritGroceryGroupGrowGruntGuardGuessGuideGuiltGuitarGunGymHabitHairHalfHammerHamsterHandHappyHarborHardHarshHarvestHatHaveHawkHazardHeadHealthHeartHeavyHedgehogHeightHelloHelmetHelpHenHeroHiddenHighHillHintHipHireHistoryHobbyHockeyHoldHoleHolidayHollowHomeHoneyHoodHopeHornHorrorHorseHospitalHostHotelHourHoverHubHugeHumanHumbleHumorHundredHungryHuntHurdleHurryHurtHusbandHybridIceIconIdeaIdentifyIdleIgnoreIllIllegalIllnessImageImitateImmenseImmuneImpactImposeImproveImpulseInchIncludeIncomeIncreaseIndexIndicateIndoorIndustryInfantInflictInformInhaleInheritInitialInjectInjuryInmateInnerInnocentInputInquiryInsaneInsectInsideInspireInstallIntactInterestIntoInvestInviteInvolveIronIslandIsolateIssueItemIvoryJacketJaguarJarJazzJealousJeansJellyJewelJobJoinJokeJourneyJoyJudgeJuiceJumpJungleJuniorJunkJustKangarooKeenKeepKetchupKeyKickKidKidneyKindKingdomKissKitKitchenKiteKittenKiwiKneeKnifeKnockKnowLabLabelLaborLadderLadyLakeLampLanguageLaptopLargeLaterLatinLaughLaundryLavaLawLawnLawsuitLayerLazyLeaderLeafLearnLeaveLectureLeftLegLegalLegendLeisureLemonLendLengthLensLeopardLessonLetterLevelLiarLibertyLibraryLicenseLifeLiftLightLikeLimbLimitLinkLionLiquidListLittleLiveLizardLoadLoanLobsterLocalLockLogicLonelyLongLoopLotteryLoudLoungeLoveLoyalLuckyLuggageLumberLunarLunchLuxuryLyricsMachineMadMagicMagnetMaidMailMainMajorMakeMammalManManageMandateMangoMansionManualMapleMarbleMarchMarginMarineMarketMarriageMaskMassMasterMatchMaterialMathMatrixMatterMaximumMazeMeadowMeanMeasureMeatMechanicMedalMediaMelodyMeltMemberMemoryMentionMenuMercyMergeMeritMerryMeshMessageMetalMethodMiddleMidnightMilkMillionMimicMindMinimumMinorMinuteMiracleMirrorMiseryMissMistakeMixMixedMixtureMobileModelModifyMomMomentMonitorMonkeyMonsterMonthMoonMoralMoreMorningMosquitoMotherMotionMotorMountainMouseMoveMovieMuchMuffinMuleMultiplyMuscleMuseumMushroomMusicMustMutualMyselfMysteryMythNaiveNameNapkinNarrowNastyNationNatureNearNeckNeedNegativeNeglectNeitherNephewNerveNestNetNetworkNeutralNeverNewsNextNiceNightNobleNoiseNomineeNoodleNormalNorthNoseNotableNoteNothingNoticeNovelNowNuclearNumberNurseNutOakObeyObjectObligeObscureObserveObtainObviousOccurOceanOctoberOdorOffOfferOfficeOftenOilOkayOldOliveOlympicOmitOnceOneOnionOnlineOnlyOpenOperaOpinionOpposeOptionOrangeOrbitOrchardOrderOrdinaryOrganOrientOriginalOrphanOstrichOtherOutdoorOuterOutputOutsideOvalOvenOverOwnOwnerOxygenOysterOzonePactPaddlePagePairPalacePalmPandaPanelPanicPantherPaperParadeParentParkParrotPartyPassPatchPathPatientPatrolPatternPausePavePaymentPeacePeanutPearPeasantPelicanPenPenaltyPencilPeoplePepperPerfectPermitPersonPetPhonePhotoPhrasePhysicalPianoPicnicPicturePiecePigPigeonPillPilotPinkPioneerPipePistolPitchPizzaPlacePlanetPlasticPlatePlayPleasePledgePluckPlugPlungePoemPoetPointPolarPolePolicePondPonyPoolPopularPortionPositionPossiblePostPotatoPotteryPovertyPowderPowerPracticePraisePredictPreferPreparePresentPrettyPreventPricePridePrimaryPrintPriorityPrisonPrivatePrizeProblemProcessProduceProfitProgramProjectPromoteProofPropertyProsperProtectProudProvidePublicPuddingPullPulpPulsePumpkinPunchPupilPuppyPurchasePurityPurposePursePushPutPuzzlePyramidQualityQuantumQuarterQuestionQuickQuitQuizQuoteRabbitRaccoonRaceRackRadarRadioRailRainRaiseRallyRampRanchRandomRangeRapidRareRateRatherRavenRawRazorReadyRealReasonRebelRebuildRecallReceiveRecipeRecordRecycleReduceReflectReformRefuseRegionRegretRegularRejectRelaxReleaseReliefRelyRemainRememberRemindRemoveRenderRenewRentReopenRepairRepeatReplaceReportRequireRescueResembleResistResourceResponseResultRetireRetreatReturnReunionRevealReviewRewardRhythmRibRibbonRiceRichRideRidgeRifleRightRigidRingRiotRippleRiskRitualRivalRiverRoadRoastRobotRobustRocketRomanceRoofRookieRoomRoseRotateRoughRoundRouteRoyalRubberRudeRugRuleRunRunwayRuralSadSaddleSadnessSafeSailSaladSalmonSalonSaltSaluteSameSampleSandSatisfySatoshiSauceSausageSaveSayScaleScanScareScatterSceneSchemeSchoolScienceScissorsScorpionScoutScrapScreenScriptScrubSeaSearchSeasonSeatSecondSecretSectionSecuritySeedSeekSegmentSelectSellSeminarSeniorSenseSentenceSeriesServiceSessionSettleSetupSevenShadowShaftShallowShareShedShellSheriffShieldShiftShineShipShiverShockShoeShootShopShortShoulderShoveShrimpShrugShuffleShySiblingSickSideSiegeSightSignSilentSilkSillySilverSimilarSimpleSinceSingSirenSisterSituateSixSizeSkateSketchSkiSkillSkinSkirtSkullSlabSlamSleepSlenderSliceSlideSlightSlimSloganSlotSlowSlushSmallSmartSmileSmokeSmoothSnackSnakeSnapSniffSnowSoapSoccerSocialSockSodaSoftSolarSoldierSolidSolutionSolveSomeoneSongSoonSorrySortSoulSoundSoupSourceSouthSpaceSpareSpatialSpawnSpeakSpecialSpeedSpellSpendSphereSpiceSpiderSpikeSpinSpiritSplitSpoilSponsorSpoonSportSpotSpraySpreadSpringSpySquareSqueezeSquirrelStableStadiumStaffStageStairsStampStandStartStateStaySteakSteelStemStepStereoStickStillStingStockStomachStoneStoolStoryStoveStrategyStreetStrikeStrongStruggleStudentStuffStumbleStyleSubjectSubmitSubwaySuccessSuchSuddenSufferSugarSuggestSuitSummerSunSunnySunsetSuperSupplySupremeSureSurfaceSurgeSurpriseSurroundSurveySuspectSustainSwallowSwampSwapSwarmSwearSweetSwiftSwimSwingSwitchSwordSymbolSymptomSyrupSystemTableTackleTagTailTalentTalkTankTapeTargetTaskTasteTattooTaxiTeachTeamTellTenTenantTennisTentTermTestTextThankThatThemeThenTheoryThereTheyThingThisThoughtThreeThriveThrowThumbThunderTicketTideTigerTiltTimberTimeTinyTipTiredTissueTitleToastTobaccoTodayToddlerToeTogetherToiletTokenTomatoTomorrowToneTongueTonightToolToothTopTopicToppleTorchTornadoTortoiseTossTotalTouristTowardTowerTownToyTrackTradeTrafficTragicTrainTransferTrapTrashTravelTrayTreatTreeTrendTrialTribeTrickTriggerTrimTripTrophyTroubleTruckTrueTrulyTrumpetTrustTruthTryTubeTuitionTumbleTunaTunnelTurkeyTurnTurtleTwelveTwentyTwiceTwinTwistTwoTypeTypicalUglyUmbrellaUnableUnawareUncleUncoverUnderUndoUnfairUnfoldUnhappyUniformUniqueUnitUniverseUnknownUnlockUntilUnusualUnveilUpdateUpgradeUpholdUponUpperUpsetUrbanUrgeUsageUseUsedUsefulUselessUsualUtilityVacantVacuumVagueValidValleyValveVanVanishVaporVariousVastVaultVehicleVelvetVendorVentureVenueVerbVerifyVersionVeryVesselVeteranViableVibrantViciousVictoryVideoViewVillageVintageViolinVirtualVirusVisaVisitVisualVitalVividVocalVoiceVoidVolcanoVolumeVoteVoyageWageWagonWaitWalkWallWalnutWantWarfareWarmWarriorWashWaspWasteWaterWaveWayWealthWeaponWearWeaselWeatherWebWeddingWeekendWeirdWelcomeWestWetWhaleWhatWheatWheelWhenWhereWhipWhisperWideWidthWifeWildWillWinWindowWineWingWinkWinnerWinterWireWisdomWiseWishWitnessWolfWomanWonderWoodWoolWordWorkWorldWorryWorthWrapWreckWrestleWristWriteWrongYardYearYellowYouYoungYouthZebraZeroZoneZoo\"\nBASE58_ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'\nZERO_BASE_NET = \"0000000000000000000000000000000000000000000000000000000000000000\"\nZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "BIP39",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "BIP39 = \"AbandonAbilityAbleAboutAboveAbsentAbsorbAbstractAbsurdAbuseAccessAccidentAccountAccuseAchieveAcidAcousticAcquireAcrossActActionActorActressActualAdaptAddAddictAddressAdjustAdmitAdultAdvanceAdviceAerobicAffairAffordAfraidAgainAgeAgentAgreeAheadAimAirAirportAisleAlarmAlbumAlcoholAlertAlienAllAlleyAllowAlmostAloneAlphaAlreadyAlsoAlterAlwaysAmateurAmazingAmongAmountAmusedAnalystAnchorAncientAngerAngleAngryAnimalAnkleAnnounceAnnualAnotherAnswerAntennaAntiqueAnxietyAnyApartApologyAppearAppleApproveAprilArchArcticAreaArenaArgueArmArmedArmorArmyAroundArrangeArrestArriveArrowArtArtefactArtistArtworkAskAspectAssaultAssetAssistAssumeAsthmaAthleteAtomAttackAttendAttitudeAttractAuctionAuditAugustAuntAuthorAutoAutumnAverageAvocadoAvoidAwakeAwareAwayAwesomeAwfulAwkwardAxisBabyBachelorBaconBadgeBagBalanceBalconyBallBambooBananaBannerBarBarelyBargainBarrelBaseBasicBasketBattleBeachBeanBeautyBecauseBecomeBeefBeforeBeginBehaveBehindBelieveBelowBeltBenchBenefitBestBetrayBetterBetweenBeyondBicycleBidBikeBindBiologyBirdBirthBitterBlackBladeBlameBlanketBlastBleakBlessBlindBloodBlossomBlouseBlueBlurBlushBoardBoatBodyBoilBombBoneBonusBookBoostBorderBoringBorrowBossBottomBounceBoxBoyBracketBrainBrandBrassBraveBreadBreezeBrickBridgeBriefBrightBringBriskBroccoliBrokenBronzeBroomBrotherBrownBrushBubbleBuddyBudgetBuffaloBuildBulbBulkBulletBundleBunkerBurdenBurgerBurstBusBusinessBusyButterBuyerBuzzCabbageCabinCableCactusCageCakeCallCalmCameraCampCanCanalCancelCandyCannonCanoeCanvasCanyonCapableCapitalCaptainCarCarbonCardCargoCarpetCarryCartCaseCashCasinoCastleCasualCatCatalogCatchCategoryCattleCaughtCauseCautionCaveCeilingCeleryCementCensusCenturyCerealCertainChairChalkChampionChangeChaosChapterChargeChaseChatCheapCheckCheeseChefCherryChestChickenChiefChildChimneyChoiceChooseChronicChuckleChunkChurnCigarCinnamonCircleCitizenCityCivilClaimClapClarifyClawClayCleanClerkCleverClickClientCliffClimbClinicClipClockClogCloseClothCloudClownClubClumpClusterClutchCoachCoastCoconutCodeCoffeeCoilCoinCollectColorColumnCombineComeComfortComicCommonCompanyConcertConductConfirmCongressConnectConsiderControlConvinceCookCoolCopperCopyCoralCoreCornCorrectCostCottonCouchCountryCoupleCourseCousinCoverCoyoteCrackCradleCraftCramCraneCrashCraterCrawlCrazyCreamCreditCreekCrewCricketCrimeCrispCriticCropCrossCrouchCrowdCrucialCruelCruiseCrumbleCrunchCrushCryCrystalCubeCultureCupCupboardCuriousCurrentCurtainCurveCushionCustomCuteCycleDadDamageDampDanceDangerDaringDashDaughterDawnDayDealDebateDebrisDecadeDecemberDecideDeclineDecorateDecreaseDeerDefenseDefineDefyDegreeDelayDeliverDemandDemiseDenialDentistDenyDepartDependDepositDepthDeputyDeriveDescribeDesertDesignDeskDespairDestroyDetailDetectDevelopDeviceDevoteDiagramDialDiamondDiaryDiceDieselDietDifferDigitalDignityDilemmaDinnerDinosaurDirectDirtDisagreeDiscoverDiseaseDishDismissDisorderDisplayDistanceDivertDivideDivorceDizzyDoctorDocumentDogDollDolphinDomainDonateDonkeyDonorDoorDoseDoubleDoveDraftDragonDramaDrasticDrawDreamDressDriftDrillDrinkDripDriveDropDrumDryDuckDumbDuneDuringDustDutchDutyDwarfDynamicEagerEagleEarlyEarnEarthEasilyEastEasyEchoEcologyEconomyEdgeEditEducateEffortEggEightEitherElbowElderElectricElegantElementElephantElevatorEliteElseEmbarkEmbodyEmbraceEmergeEmotionEmployEmpowerEmptyEnableEnactEndEndlessEndorseEnemyEnergyEnforceEngageEngineEnhanceEnjoyEnlistEnoughEnrichEnrollEnsureEnterEntireEntryEnvelopeEpisodeEqualEquipEraEraseErodeErosionErrorEruptEscapeEssayEssenceEstateEternalEthicsEvidenceEvilEvokeEvolveExactExampleExcessExchangeExciteExcludeExcuseExecuteExerciseExhaustExhibitExileExistExitExoticExpandExpectExpireExplainExposeExpressExtendExtraEyeEyebrowFabricFaceFacultyFadeFaintFaithFallFalseFameFamilyFamousFanFancyFantasyFarmFashionFatFatalFatherFatigueFaultFavoriteFeatureFebruaryFederalFeeFeedFeelFemaleFenceFestivalFetchFeverFewFiberFictionFieldFigureFileFilmFilterFinalFindFineFingerFinishFireFirmFirstFiscalFishFitFitnessFixFlagFlameFlashFlatFlavorFleeFlightFlipFloatFlockFloorFlowerFluidFlushFlyFoamFocusFogFoilFoldFollowFoodFootForceForestForgetForkFortuneForumForwardFossilFosterFoundFoxFragileFrameFrequentFreshFriendFringeFrogFrontFrostFrownFrozenFruitFuelFunFunnyFurnaceFuryFutureGadgetGainGalaxyGalleryGameGapGarageGarbageGardenGarlicGarmentGasGaspGateGatherGaugeGazeGeneralGeniusGenreGentleGenuineGestureGhostGiantGiftGiggleGingerGiraffeGirlGiveGladGlanceGlareGlassGlideGlimpseGlobeGloomGloryGloveGlowGlueGoatGoddessGoldGoodGooseGorillaGospelGossipGovernGownGrabGraceGrainGrantGrapeGrassGravityGreatGreenGridGriefGritGroceryGroupGrowGruntGuardGuessGuideGuiltGuitarGunGymHabitHairHalfHammerHamsterHandHappyHarborHardHarshHarvestHatHaveHawkHazardHeadHealthHeartHeavyHedgehogHeightHelloHelmetHelpHenHeroHiddenHighHillHintHipHireHistoryHobbyHockeyHoldHoleHolidayHollowHomeHoneyHoodHopeHornHorrorHorseHospitalHostHotelHourHoverHubHugeHumanHumbleHumorHundredHungryHuntHurdleHurryHurtHusbandHybridIceIconIdeaIdentifyIdleIgnoreIllIllegalIllnessImageImitateImmenseImmuneImpactImposeImproveImpulseInchIncludeIncomeIncreaseIndexIndicateIndoorIndustryInfantInflictInformInhaleInheritInitialInjectInjuryInmateInnerInnocentInputInquiryInsaneInsectInsideInspireInstallIntactInterestIntoInvestInviteInvolveIronIslandIsolateIssueItemIvoryJacketJaguarJarJazzJealousJeansJellyJewelJobJoinJokeJourneyJoyJudgeJuiceJumpJungleJuniorJunkJustKangarooKeenKeepKetchupKeyKickKidKidneyKindKingdomKissKitKitchenKiteKittenKiwiKneeKnifeKnockKnowLabLabelLaborLadderLadyLakeLampLanguageLaptopLargeLaterLatinLaughLaundryLavaLawLawnLawsuitLayerLazyLeaderLeafLearnLeaveLectureLeftLegLegalLegendLeisureLemonLendLengthLensLeopardLessonLetterLevelLiarLibertyLibraryLicenseLifeLiftLightLikeLimbLimitLinkLionLiquidListLittleLiveLizardLoadLoanLobsterLocalLockLogicLonelyLongLoopLotteryLoudLoungeLoveLoyalLuckyLuggageLumberLunarLunchLuxuryLyricsMachineMadMagicMagnetMaidMailMainMajorMakeMammalManManageMandateMangoMansionManualMapleMarbleMarchMarginMarineMarketMarriageMaskMassMasterMatchMaterialMathMatrixMatterMaximumMazeMeadowMeanMeasureMeatMechanicMedalMediaMelodyMeltMemberMemoryMentionMenuMercyMergeMeritMerryMeshMessageMetalMethodMiddleMidnightMilkMillionMimicMindMinimumMinorMinuteMiracleMirrorMiseryMissMistakeMixMixedMixtureMobileModelModifyMomMomentMonitorMonkeyMonsterMonthMoonMoralMoreMorningMosquitoMotherMotionMotorMountainMouseMoveMovieMuchMuffinMuleMultiplyMuscleMuseumMushroomMusicMustMutualMyselfMysteryMythNaiveNameNapkinNarrowNastyNationNatureNearNeckNeedNegativeNeglectNeitherNephewNerveNestNetNetworkNeutralNeverNewsNextNiceNightNobleNoiseNomineeNoodleNormalNorthNoseNotableNoteNothingNoticeNovelNowNuclearNumberNurseNutOakObeyObjectObligeObscureObserveObtainObviousOccurOceanOctoberOdorOffOfferOfficeOftenOilOkayOldOliveOlympicOmitOnceOneOnionOnlineOnlyOpenOperaOpinionOpposeOptionOrangeOrbitOrchardOrderOrdinaryOrganOrientOriginalOrphanOstrichOtherOutdoorOuterOutputOutsideOvalOvenOverOwnOwnerOxygenOysterOzonePactPaddlePagePairPalacePalmPandaPanelPanicPantherPaperParadeParentParkParrotPartyPassPatchPathPatientPatrolPatternPausePavePaymentPeacePeanutPearPeasantPelicanPenPenaltyPencilPeoplePepperPerfectPermitPersonPetPhonePhotoPhrasePhysicalPianoPicnicPicturePiecePigPigeonPillPilotPinkPioneerPipePistolPitchPizzaPlacePlanetPlasticPlatePlayPleasePledgePluckPlugPlungePoemPoetPointPolarPolePolicePondPonyPoolPopularPortionPositionPossiblePostPotatoPotteryPovertyPowderPowerPracticePraisePredictPreferPreparePresentPrettyPreventPricePridePrimaryPrintPriorityPrisonPrivatePrizeProblemProcessProduceProfitProgramProjectPromoteProofPropertyProsperProtectProudProvidePublicPuddingPullPulpPulsePumpkinPunchPupilPuppyPurchasePurityPurposePursePushPutPuzzlePyramidQualityQuantumQuarterQuestionQuickQuitQuizQuoteRabbitRaccoonRaceRackRadarRadioRailRainRaiseRallyRampRanchRandomRangeRapidRareRateRatherRavenRawRazorReadyRealReasonRebelRebuildRecallReceiveRecipeRecordRecycleReduceReflectReformRefuseRegionRegretRegularRejectRelaxReleaseReliefRelyRemainRememberRemindRemoveRenderRenewRentReopenRepairRepeatReplaceReportRequireRescueResembleResistResourceResponseResultRetireRetreatReturnReunionRevealReviewRewardRhythmRibRibbonRiceRichRideRidgeRifleRightRigidRingRiotRippleRiskRitualRivalRiverRoadRoastRobotRobustRocketRomanceRoofRookieRoomRoseRotateRoughRoundRouteRoyalRubberRudeRugRuleRunRunwayRuralSadSaddleSadnessSafeSailSaladSalmonSalonSaltSaluteSameSampleSandSatisfySatoshiSauceSausageSaveSayScaleScanScareScatterSceneSchemeSchoolScienceScissorsScorpionScoutScrapScreenScriptScrubSeaSearchSeasonSeatSecondSecretSectionSecuritySeedSeekSegmentSelectSellSeminarSeniorSenseSentenceSeriesServiceSessionSettleSetupSevenShadowShaftShallowShareShedShellSheriffShieldShiftShineShipShiverShockShoeShootShopShortShoulderShoveShrimpShrugShuffleShySiblingSickSideSiegeSightSignSilentSilkSillySilverSimilarSimpleSinceSingSirenSisterSituateSixSizeSkateSketchSkiSkillSkinSkirtSkullSlabSlamSleepSlenderSliceSlideSlightSlimSloganSlotSlowSlushSmallSmartSmileSmokeSmoothSnackSnakeSnapSniffSnowSoapSoccerSocialSockSodaSoftSolarSoldierSolidSolutionSolveSomeoneSongSoonSorrySortSoulSoundSoupSourceSouthSpaceSpareSpatialSpawnSpeakSpecialSpeedSpellSpendSphereSpiceSpiderSpikeSpinSpiritSplitSpoilSponsorSpoonSportSpotSpraySpreadSpringSpySquareSqueezeSquirrelStableStadiumStaffStageStairsStampStandStartStateStaySteakSteelStemStepStereoStickStillStingStockStomachStoneStoolStoryStoveStrategyStreetStrikeStrongStruggleStudentStuffStumbleStyleSubjectSubmitSubwaySuccessSuchSuddenSufferSugarSuggestSuitSummerSunSunnySunsetSuperSupplySupremeSureSurfaceSurgeSurpriseSurroundSurveySuspectSustainSwallowSwampSwapSwarmSwearSweetSwiftSwimSwingSwitchSwordSymbolSymptomSyrupSystemTableTackleTagTailTalentTalkTankTapeTargetTaskTasteTattooTaxiTeachTeamTellTenTenantTennisTentTermTestTextThankThatThemeThenTheoryThereTheyThingThisThoughtThreeThriveThrowThumbThunderTicketTideTigerTiltTimberTimeTinyTipTiredTissueTitleToastTobaccoTodayToddlerToeTogetherToiletTokenTomatoTomorrowToneTongueTonightToolToothTopTopicToppleTorchTornadoTortoiseTossTotalTouristTowardTowerTownToyTrackTradeTrafficTragicTrainTransferTrapTrashTravelTrayTreatTreeTrendTrialTribeTrickTriggerTrimTripTrophyTroubleTruckTrueTrulyTrumpetTrustTruthTryTubeTuitionTumbleTunaTunnelTurkeyTurnTurtleTwelveTwentyTwiceTwinTwistTwoTypeTypicalUglyUmbrellaUnableUnawareUncleUncoverUnderUndoUnfairUnfoldUnhappyUniformUniqueUnitUniverseUnknownUnlockUntilUnusualUnveilUpdateUpgradeUpholdUponUpperUpsetUrbanUrgeUsageUseUsedUsefulUselessUsualUtilityVacantVacuumVagueValidValleyValveVanVanishVaporVariousVastVaultVehicleVelvetVendorVentureVenueVerbVerifyVersionVeryVesselVeteranViableVibrantViciousVictoryVideoViewVillageVintageViolinVirtualVirusVisaVisitVisualVitalVividVocalVoiceVoidVolcanoVolumeVoteVoyageWageWagonWaitWalkWallWalnutWantWarfareWarmWarriorWashWaspWasteWaterWaveWayWealthWeaponWearWeaselWeatherWebWeddingWeekendWeirdWelcomeWestWetWhaleWhatWheatWheelWhenWhereWhipWhisperWideWidthWifeWildWillWinWindowWineWingWinkWinnerWinterWireWisdomWiseWishWitnessWolfWomanWonderWoodWoolWordWorkWorldWorryWorthWrapWreckWrestleWristWriteWrongYardYearYellowYouYoungYouthZebraZeroZoneZoo\"\nBASE58_ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'\nZERO_BASE_NET = \"0000000000000000000000000000000000000000000000000000000000000000\"\nZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "BASE58_ALPHABET",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "BASE58_ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'\nZERO_BASE_NET = \"0000000000000000000000000000000000000000000000000000000000000000\"\nZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "ZERO_BASE_NET",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "ZERO_BASE_NET = \"0000000000000000000000000000000000000000000000000000000000000000\"\nZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "ZERO_BYTES",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "ZERO_BYTES = b'\\x00\\x00\\x00\\x00'\n# main\nMAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_PREFIX",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "MAIN_PREFIX = b'\\x80'\nMAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_SUFFIX",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "MAIN_SUFFIX = b'\\x01'\nCOMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "COMPRESSED_PREFIX",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "COMPRESSED_PREFIX = b'\\x03'\nCOMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "COMPRESSED_PREFIX2",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "COMPRESSED_PREFIX2 = b'\\x02'\nUNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "UNCOMPRESSED_PREFIX",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "UNCOMPRESSED_PREFIX = b'\\x04'\nMAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_DIGEST_RMD160",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "MAIN_DIGEST_RMD160 = b\"\\x00\"\nMAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "MAIN_DIGEST",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "MAIN_DIGEST = b\"\\x00\"\nMAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_PRIVATE_KEY",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "MAX_PRIVATE_KEY = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140\nVERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "VERSION_NETWORK",
+        "kind": 5,
+        "importPath": "libit.asset",
+        "description": "libit.asset",
+        "peekOfCode": "VERSION_NETWORK = b'\\x04\\x88\\xAD\\xE4'",
+        "detail": "libit.asset",
+        "documentation": {}
+    },
+    {
+        "label": "Bitcoin",
+        "kind": 6,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "class Bitcoin:\n    \"\"\"Bitcoin wallet class supporting multiple address formats.\"\"\"\n    def __init__(self, private_key: str):\n        \"\"\"\n        Initialize Bitcoin wallet with private key.\n        Args:\n            private_key: Hexadecimal private key string (64 characters)\n        \"\"\"\n        if len(private_key) != 64:\n            raise ValueError(\"Private key must be 64 hexadecimal characters\")",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "double_sha256",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def double_sha256(data: bytes) -> bytes:\n    \"\"\"Double SHA256 hash.\"\"\"\n    return hashlib.sha256(hashlib.sha256(data).digest()).digest()\ndef hash160(data: bytes) -> bytes:\n    \"\"\"RIPEMD160(SHA256(data)).\"\"\"\n    sha256_hash = hashlib.sha256(data).digest()\n    ripemd160 = hashlib.new(\"ripemd160\")\n    ripemd160.update(sha256_hash)\n    return ripemd160.digest()\ndef bech32_polymod(values):",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "hash160",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def hash160(data: bytes) -> bytes:\n    \"\"\"RIPEMD160(SHA256(data)).\"\"\"\n    sha256_hash = hashlib.sha256(data).digest()\n    ripemd160 = hashlib.new(\"ripemd160\")\n    ripemd160.update(sha256_hash)\n    return ripemd160.digest()\ndef bech32_polymod(values):\n    \"\"\"Internal function for bech32 encoding.\"\"\"\n    GEN = [0x3B6A57B2, 0x26508E6D, 0x1EA119FA, 0x3D4233DD, 0x2A1462B3]\n    chk = 1",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_polymod",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def bech32_polymod(values):\n    \"\"\"Internal function for bech32 encoding.\"\"\"\n    GEN = [0x3B6A57B2, 0x26508E6D, 0x1EA119FA, 0x3D4233DD, 0x2A1462B3]\n    chk = 1\n    for value in values:\n        b = chk >> 25\n        chk = (chk & 0x1FFFFFF) << 5 ^ value\n        for i in range(5):\n            chk ^= GEN[i] if ((b >> i) & 1) else 0\n    return chk",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_hrp_expand",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def bech32_hrp_expand(hrp):\n    \"\"\"Expand the HRP into values for checksum computation.\"\"\"\n    return [ord(x) >> 5 for x in hrp] + [0] + [ord(x) & 31 for x in hrp]\ndef bech32_verify_checksum(hrp, data):\n    \"\"\"Verify a checksum given HRP and converted data characters.\"\"\"\n    return bech32_polymod(bech32_hrp_expand(hrp) + data) == 1\ndef bech32_create_checksum(hrp, data):\n    \"\"\"Compute the checksum values given HRP and data.\"\"\"\n    values = bech32_hrp_expand(hrp) + data\n    polymod = bech32_polymod(values + [0, 0, 0, 0, 0, 0]) ^ 1",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_verify_checksum",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def bech32_verify_checksum(hrp, data):\n    \"\"\"Verify a checksum given HRP and converted data characters.\"\"\"\n    return bech32_polymod(bech32_hrp_expand(hrp) + data) == 1\ndef bech32_create_checksum(hrp, data):\n    \"\"\"Compute the checksum values given HRP and data.\"\"\"\n    values = bech32_hrp_expand(hrp) + data\n    polymod = bech32_polymod(values + [0, 0, 0, 0, 0, 0]) ^ 1\n    return [(polymod >> 5 * (5 - i)) & 31 for i in range(6)]\ndef bech32_encode(hrp, data):\n    \"\"\"Compute a Bech32 string given HRP and data values.\"\"\"",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_create_checksum",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def bech32_create_checksum(hrp, data):\n    \"\"\"Compute the checksum values given HRP and data.\"\"\"\n    values = bech32_hrp_expand(hrp) + data\n    polymod = bech32_polymod(values + [0, 0, 0, 0, 0, 0]) ^ 1\n    return [(polymod >> 5 * (5 - i)) & 31 for i in range(6)]\ndef bech32_encode(hrp, data):\n    \"\"\"Compute a Bech32 string given HRP and data values.\"\"\"\n    combined = data + bech32_create_checksum(hrp, data)\n    return hrp + \"1\" + \"\".join([bech32_charset[d] for d in combined])\ndef convertbits(data, frombits, tobits, pad=True):",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_encode",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def bech32_encode(hrp, data):\n    \"\"\"Compute a Bech32 string given HRP and data values.\"\"\"\n    combined = data + bech32_create_checksum(hrp, data)\n    return hrp + \"1\" + \"\".join([bech32_charset[d] for d in combined])\ndef convertbits(data, frombits, tobits, pad=True):\n    \"\"\"Convert between bit groups.\"\"\"\n    acc = 0\n    bits = 0\n    ret = []\n    maxv = (1 << tobits) - 1",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "convertbits",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def convertbits(data, frombits, tobits, pad=True):\n    \"\"\"Convert between bit groups.\"\"\"\n    acc = 0\n    bits = 0\n    ret = []\n    maxv = (1 << tobits) - 1\n    max_acc = (1 << (frombits + tobits - 1)) - 1\n    for value in data:\n        if value < 0 or (value >> frombits):\n            return None",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_p2pkh",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_p2pkh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2PKH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2pkh_address(compressed)\ndef private_key_to_p2sh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2SH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2sh_address(compressed)\ndef private_key_to_p2wpkh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WPKH address.\"\"\"",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_p2sh",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_p2sh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2SH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2sh_address(compressed)\ndef private_key_to_p2wpkh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WPKH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2wpkh_address(compressed)\ndef private_key_to_p2wsh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WSH address.\"\"\"",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_p2wpkh",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_p2wpkh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WPKH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2wpkh_address(compressed)\ndef private_key_to_p2wsh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WSH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2wsh_address(compressed)\ndef private_key_to_all_addresses(\n    private_key: str, compressed: bool = True",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_p2wsh",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_p2wsh(private_key: str, compressed: bool = True) -> str:\n    \"\"\"Convert private key to P2WSH address.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_p2wsh_address(compressed)\ndef private_key_to_all_addresses(\n    private_key: str, compressed: bool = True\n) -> Dict[str, str]:\n    \"\"\"Convert private key to all address formats.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_all_addresses(compressed)",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_all_addresses",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_all_addresses(\n    private_key: str, compressed: bool = True\n) -> Dict[str, str]:\n    \"\"\"Convert private key to all address formats.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_all_addresses(compressed)\ndef private_key_to_wallet_info(\n    private_key: str, compressed: bool = True\n) -> Dict[str, Any]:\n    \"\"\"Get complete wallet information from private key.\"\"\"",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "private_key_to_wallet_info",
+        "kind": 2,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "def private_key_to_wallet_info(\n    private_key: str, compressed: bool = True\n) -> Dict[str, Any]:\n    \"\"\"Get complete wallet information from private key.\"\"\"\n    wallet = Bitcoin(private_key)\n    return wallet.get_wallet_info(compressed)",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "bech32_charset",
+        "kind": 5,
+        "importPath": "libit.bitcoin",
+        "description": "libit.bitcoin",
+        "peekOfCode": "bech32_charset = \"qpzry9x8gf2tvdw0s3jn54khce6mua7l\"\nclass Bitcoin:\n    \"\"\"Bitcoin wallet class supporting multiple address formats.\"\"\"\n    def __init__(self, private_key: str):\n        \"\"\"\n        Initialize Bitcoin wallet with private key.\n        Args:\n            private_key: Hexadecimal private key string (64 characters)\n        \"\"\"\n        if len(private_key) != 64:",
+        "detail": "libit.bitcoin",
+        "documentation": {}
+    },
+    {
+        "label": "scrub_input",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def scrub_input(v: Union[str, bytes]) -> bytes:\n    if isinstance(v, str):\n        v = v.encode('ascii')\n    return v\ndef b58encode_int(\n    i: int, default_one: bool = True, alphabet: bytes = ALPHABET\n) -> bytes:\n    \"\"\"\n    Encode an integer using Base58\n    \"\"\"",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58encode_int",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58encode_int(\n    i: int, default_one: bool = True, alphabet: bytes = ALPHABET\n) -> bytes:\n    \"\"\"\n    Encode an integer using Base58\n    \"\"\"\n    if not i and default_one:\n        return alphabet[0:1]\n    string = b\"\"\n    base = len(alphabet)",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58encode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58encode(\n    v: Union[str, bytes], alphabet: bytes = ALPHABET\n) -> bytes:\n    \"\"\"\n    Encode a string using Base58\n    \"\"\"\n    v = scrub_input(v)\n    mainSize = len(v)\n    v = v.lstrip(b'\\0')\n    newSize = len(v)",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58decode_int",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58decode_int(\n    v: Union[str, bytes], alphabet: bytes = ALPHABET, *,\n    autofix: bool = False\n) -> int:\n    \"\"\"\n    Decode a Base58 encoded string as an integer\n    \"\"\"\n    if b' ' not in alphabet:\n        v = v.rstrip()\n    v = scrub_input(v)",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58decode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58decode(\n    v: Union[str, bytes], alphabet: bytes = ALPHABET, *,\n    autofix: bool = False\n) -> bytes:\n    \"\"\"\n    Decode a Base58 encoded string\n    \"\"\"\n    v = v.rstrip()\n    v = scrub_input(v)\n    mainSize = len(v)",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58encode_check",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58encode_check(\n    v: Union[str, bytes], alphabet: bytes = ALPHABET\n) -> bytes:\n    \"\"\"\n    Encode a string using Base58 with a 4 character checksum\n    \"\"\"\n    v = scrub_input(v)\n    digest = sha256(sha256(v).digest()).digest()\n    return b58encode(v + digest[:4], alphabet=alphabet)\ndef b58decode_check(",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "b58decode_check",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def b58decode_check(\n    v: Union[str, bytes], alphabet: bytes = ALPHABET, *,\n    autofix: bool = False\n) -> bytes:\n    \"\"\"Decode and verify the checksum of a Base58 encoded string\"\"\"\n    result = b58decode(v, alphabet=alphabet, autofix=autofix)\n    result, check = result[:-4], result[-4:]\n    digest = sha256(sha256(result).digest()).digest()\n    if check != digest[:4]:\n        raise ValueError(\"Invalid checksum\")",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "base58_encode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def base58_encode(num):\n    num = int(num, 16)\n    encoded = ''\n    while num:\n        num, remainder = divmod(num, 58)\n        encoded = BASE58_ALPHABET[remainder] + encoded\n    return encoded\ndef base58_check_encode(payload, prefix=0x00):\n    payload = bytes([prefix]) + payload\n    checksum = sha256(sha256(payload).digest()).digest()[:4]",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "base58_check_encode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def base58_check_encode(payload, prefix=0x00):\n    payload = bytes([prefix]) + payload\n    checksum = sha256(sha256(payload).digest()).digest()[:4]\n    return base58_encode(payload.hex() + checksum.hex())\ndef base58encodeCheck(prefix, payload):\n    s = prefix + payload\n    raw = sha256(sha256(s).digest()).digest()[:4]\n    return b58encode(int.from_bytes(s + raw, 'big'))\ndef string_to_int(data):\n    val = 0",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "base58encodeCheck",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def base58encodeCheck(prefix, payload):\n    s = prefix + payload\n    raw = sha256(sha256(s).digest()).digest()[:4]\n    return b58encode(int.from_bytes(s + raw, 'big'))\ndef string_to_int(data):\n    val = 0\n    if type(data) == str:\n        data = bytearray(data)\n    for (i, c) in enumerate(data[::-1]):\n        val += (256 ** i) * c",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "string_to_int",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def string_to_int(data):\n    val = 0\n    if type(data) == str:\n        data = bytearray(data)\n    for (i, c) in enumerate(data[::-1]):\n        val += (256 ** i) * c\n    return val\ndef encode_(data):\n    enc = \"\"\n    val = string_to_int(data)",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "encode_",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def encode_(data):\n    enc = \"\"\n    val = string_to_int(data)\n    bs58size = len(BASE58_ALPHABET)\n    while val >= bs58size:\n        val, mod = divmod(val, bs58size)\n        enc = BASE58_ALPHABET[mod] + enc\n    if val:\n        enc = BASE58_ALPHABET[val] + enc\n    n = len(data) - len(data.lstrip(b\"\\0\"))",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "check_encode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def check_encode(raw):\n    check = sha256(sha256(raw).digest()).digest()[:4]\n    return encode_(raw + check)\ndef decode_(data):\n    if isinstance(data, bytes):\n        data = data.decode(\"ascii\")\n    val = 0\n    prefix = 0\n    bs58size = len(BASE58_ALPHABET)\n    for cx in data:",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "decode_",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def decode_(data):\n    if isinstance(data, bytes):\n        data = data.decode(\"ascii\")\n    val = 0\n    prefix = 0\n    bs58size = len(BASE58_ALPHABET)\n    for cx in data:\n        val = (val * bs58size) + BASE58_ALPHABET.find(cx)\n        if val == 0:\n            prefix += 1",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "check_decode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def check_decode(e):\n    dec = decode_(e)\n    raw, ck = dec[:-4], dec[-4:]\n    if ck != sha256(sha256(raw).digest()).digest()[:4]:\n        raise ValueError(\"base58 decoding checksum error\")\n    else:\n        return raw\ndef base58encode(num):\n    if num == 0:\n        return BASE58_ALPHABET[0]",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "base58encode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def base58encode(num):\n    if num == 0:\n        return BASE58_ALPHABET[0]\n    arr = []\n    while num:\n        num, rem = divmod(num, 58)\n        arr.append(BASE58_ALPHABET[rem])\n    arr.reverse()\n    return ''.join(arr)\ndef base58decode(raw):",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "base58decode",
+        "kind": 2,
+        "importPath": "libit.bs58",
+        "description": "libit.bs58",
+        "peekOfCode": "def base58decode(raw):\n    decoded = 0\n    for char in raw:\n        decoded = decoded * 58 + BASE58_ALPHABET.index(char)\n    bytes_rep = decoded.to_bytes((decoded.bit_length() + 7) // 8, byteorder='big')\n    landing = bytes_rep.lstrip(MAIN_DIGEST_RMD160)\n    data_size = (len(raw) - len(landing))\n    return MAIN_DIGEST_RMD160 * data_size + bytes_rep",
+        "detail": "libit.bs58",
+        "documentation": {}
+    },
+    {
+        "label": "Ethereum",
+        "kind": 6,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "class Ethereum:\n    def __init__(self, private_key: str):\n        self.private_key = private_key\n    def get_address(self) -> str:\n        return hex_to_eth(self.private_key)\n    def get_decimal(self) -> int:\n        return int(self.private_key, 16)\n    def get_seed(self) -> bytes:\n        return bytes.fromhex(self.private_key)\n    def get_hexAddress(self) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "tron",
+        "kind": 6,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "class tron:\n    def __init__(self, private_key: str):\n        self.private_key = private_key\n    def get_address(self) -> str:\n        return hex_to_tron(self.private_key)\n    def get_decimal(self) -> int:\n        return int(self.private_key, 16)\n    def get_seed(self) -> bytes:\n        return bytes.fromhex(self.private_key)\n    def get_hexAddress(self) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "double_sha256",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def double_sha256(data):\n    return hashlib.sha256(hashlib.sha256(data).digest()).digest()\ndef sha256_hex(data):\n    return hashlib.sha256(bytes.fromhex(data)).hexdigest()\ndef bytes_to_wif(private_key, compress=True) -> str:\n    if compress:\n        EXTENDED_KEY = MAIN_PREFIX + private_key + MAIN_SUFFIX\n    else:\n        EXTENDED_KEY = MAIN_PREFIX + private_key\n    DOUBLE_SHA256 = double_sha256(EXTENDED_KEY)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "sha256_hex",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def sha256_hex(data):\n    return hashlib.sha256(bytes.fromhex(data)).hexdigest()\ndef bytes_to_wif(private_key, compress=True) -> str:\n    if compress:\n        EXTENDED_KEY = MAIN_PREFIX + private_key + MAIN_SUFFIX\n    else:\n        EXTENDED_KEY = MAIN_PREFIX + private_key\n    DOUBLE_SHA256 = double_sha256(EXTENDED_KEY)\n    CHECKSUM = DOUBLE_SHA256[:4]\n    WIF = b58encode(EXTENDED_KEY + CHECKSUM)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_to_wif",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_to_wif(private_key, compress=True) -> str:\n    if compress:\n        EXTENDED_KEY = MAIN_PREFIX + private_key + MAIN_SUFFIX\n    else:\n        EXTENDED_KEY = MAIN_PREFIX + private_key\n    DOUBLE_SHA256 = double_sha256(EXTENDED_KEY)\n    CHECKSUM = DOUBLE_SHA256[:4]\n    WIF = b58encode(EXTENDED_KEY + CHECKSUM)\n    return WIF.decode('utf-8')\ndef bytes_to_int(seed) -> int:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_to_int",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_to_int(seed) -> int:\n    return int.from_bytes(seed, byteorder='big')\ndef bytes_to_public(seed: bytes, compress: bool = True) -> bytes:\n    sk = ecdsa.SigningKey.from_string(seed, curve=ecdsa.SECP256k1)\n    vk = sk.get_verifying_key()\n    if compress:\n        prefix = COMPRESSED_PREFIX2 if vk.pubkey.point.y() % 2 == 0 else COMPRESSED_PREFIX\n        return prefix + vk.to_string()[:32]\n    else:\n        return UNCOMPRESSED_PREFIX + vk.to_string()",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_to_public",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_to_public(seed: bytes, compress: bool = True) -> bytes:\n    sk = ecdsa.SigningKey.from_string(seed, curve=ecdsa.SECP256k1)\n    vk = sk.get_verifying_key()\n    if compress:\n        prefix = COMPRESSED_PREFIX2 if vk.pubkey.point.y() % 2 == 0 else COMPRESSED_PREFIX\n        return prefix + vk.to_string()[:32]\n    else:\n        return UNCOMPRESSED_PREFIX + vk.to_string()\ndef to_hex(data: str) -> str:\n    \"\"\"",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "to_hex",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def to_hex(data: str) -> str:\n    \"\"\"\n    converting dats words example passphrase or ... to hexadecimal.\n    Args:\n        data:\n    Returns:\n        hexed\n    \"\"\"\n    data = data.encode()\n    dt256 = hashlib.sha256(data)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "to_bytes",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def to_bytes(data: str) -> bytes:\n    return bytes.fromhex(data)\ndef hex_to_bytes(hexed: str) -> bytes:\n    return unhexlify(hexed)\ndef bytes_to_hex(seed: bytes) -> str:\n    hexed = seed.hex()\n    if len(hexed) < 64:\n        hexed = \"0\" * (64 - len(hexed)) + hexed\n    elif len(hexed) > 64:\n        hexed = hexed[0:64]",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "hex_to_bytes",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def hex_to_bytes(hexed: str) -> bytes:\n    return unhexlify(hexed)\ndef bytes_to_hex(seed: bytes) -> str:\n    hexed = seed.hex()\n    if len(hexed) < 64:\n        hexed = \"0\" * (64 - len(hexed)) + hexed\n    elif len(hexed) > 64:\n        hexed = hexed[0:64]\n    return hexed\ndef pub_to_addr(public_key: bytes) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_to_hex",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_to_hex(seed: bytes) -> str:\n    hexed = seed.hex()\n    if len(hexed) < 64:\n        hexed = \"0\" * (64 - len(hexed)) + hexed\n    elif len(hexed) > 64:\n        hexed = hexed[0:64]\n    return hexed\ndef pub_to_addr(public_key: bytes) -> str:\n    ripemd160 = hashlib.new('ripemd160')\n    ripemd160.update(hashlib.sha256(public_key).digest())",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "pub_to_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def pub_to_addr(public_key: bytes) -> str:\n    ripemd160 = hashlib.new('ripemd160')\n    ripemd160.update(hashlib.sha256(public_key).digest())\n    hashed = MAIN_DIGEST_RMD160 + ripemd160.digest()\n    checksum = hashlib.sha256(hashlib.sha256(hashed).digest()).digest()[:4]\n    address = hashed + checksum\n    return b58encode(address).decode('utf-8')\ndef pass_to_addr(passphrase, compress=False):\n    passBytes = bytes.fromhex(to_hex(passphrase))\n    sk = ecdsa.SigningKey.from_string(passBytes, curve=ecdsa.SECP256k1)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "pass_to_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def pass_to_addr(passphrase, compress=False):\n    passBytes = bytes.fromhex(to_hex(passphrase))\n    sk = ecdsa.SigningKey.from_string(passBytes, curve=ecdsa.SECP256k1)\n    vk = sk.verifying_key\n    if compress:\n        if vk.pubkey.point.y() & 1:\n            pub_key = COMPRESSED_PREFIX + vk.to_string()[:32]\n        else:\n            pub_key = COMPRESSED_PREFIX2 + vk.to_string()[:32]\n    else:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "int_to_bytes",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def int_to_bytes(int_dec: int) -> bytes:\n    bytes_length = (int_dec.bit_length() + 7) // 8\n    return int_dec.to_bytes(bytes_length, 'big')\ndef int_to_hex(dec: int) -> str:\n    return \"%064x\" % dec\ndef wif_to_bytes(wif) -> bytes:\n    \"\"\"\n    convert wif to bytes\n    Args:\n        wif:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "int_to_hex",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def int_to_hex(dec: int) -> str:\n    return \"%064x\" % dec\ndef wif_to_bytes(wif) -> bytes:\n    \"\"\"\n    convert wif to bytes\n    Args:\n        wif:\n    Returns:\n        bytes\n    \"\"\"",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "wif_to_bytes",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def wif_to_bytes(wif) -> bytes:\n    \"\"\"\n    convert wif to bytes\n    Args:\n        wif:\n    Returns:\n        bytes\n    \"\"\"\n    wif_bytes = b58decode(wif)\n    isCompress = wif_bytes[-5] == 0x01 if len(wif_bytes) == 38 else False",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "hex_to_eth",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def hex_to_eth(key_string):\n    keybytes = bytes.fromhex(key_string)\n    sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)\n    key = sk.get_verifying_key()\n    KEY = key.to_string()\n    Keccak = keccak.new(digest_bits=256)\n    Keccak.update(KEY)\n    pub_key = Keccak.digest()\n    primitive_addr = b'\\4' + pub_key[-20:]\n    hashaddr = primitive_addr.hex()",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "hex_to_tron",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def hex_to_tron(key_string):\n    keybytes = bytes.fromhex(key_string)\n    sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)\n    key = sk.get_verifying_key()\n    KEY = key.to_string()\n    Keccak = keccak.new(digest_bits=256)\n    Keccak.update(KEY)\n    pub_key = Keccak.digest()\n    primitive_addr = b'\\x41' + pub_key[-20:]\n    addr = b58encode_check(primitive_addr)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "hex_addr_tron",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def hex_addr_tron(address: str):\n    return b58decode(address).hex()[:-8]\nclass tron:\n    def __init__(self, private_key: str):\n        self.private_key = private_key\n    def get_address(self) -> str:\n        return hex_to_tron(self.private_key)\n    def get_decimal(self) -> int:\n        return int(self.private_key, 16)\n    def get_seed(self) -> bytes:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_wif",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_wif(seed: bytes, compress: bool = False) -> str:\n    \"\"\"\n    convert bytes to wif compressed or uncompressed.\n    Args:\n        seed:\n        compress:\n    Returns:\n        wif\n    \"\"\"\n    return bytes_to_wif(seed, compress)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "hex_bytes",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def hex_bytes(hex_string: str) -> bytes:\n    \"\"\"\n    convert hex string to bytes.\n    Args:\n        hex_string:\n    Returns:\n        bytes\n    \"\"\"\n    return bytes.fromhex(hex_string)\ndef privatekey_wif(privateHex: str, compress: bool = False) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "privatekey_wif",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def privatekey_wif(privateHex: str, compress: bool = False) -> str:\n    \"\"\"\n    convert a private key to wif\n    Args:\n        privateHex:\n        compress:\n    Returns:\n        wif\n    \"\"\"\n    seed = hex_to_bytes(privateHex)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "privatekey_decimal",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def privatekey_decimal(privateHex: str) -> int:\n    \"\"\"\n    convert a private key to decimal\n    Args:\n        privateHex:\n    Returns:\n        int\n    \"\"\"\n    return int(privateHex, 16)\ndef bytes_addr(seed: bytes, compress: bool = False) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_addr(seed: bytes, compress: bool = False) -> str:\n    \"\"\"\n    Args:\n        seed:\n        compress:\n    Returns:\n        addr\n    \"\"\"\n    pb = bytes_to_public(seed, compress)\n    return pub_to_addr(pb)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "wif_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def wif_addr(wif: str, compress: bool = False) -> str:\n    \"\"\"\n    Args:\n        wif:\n        compress:\n    Returns:\n        addr\n    \"\"\"\n    seed = wif_to_bytes(wif)\n    return bytes_addr(seed, compress)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "privatekey_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def privatekey_addr(hex_string: str, compress: bool = False) -> str:\n    \"\"\"\n    Args:\n        hex_string:\n        compress:\n    Returns:\n        addr\n    \"\"\"\n    seed = hex_bytes(hex_string)\n    return bytes_addr(seed, compress)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "passphrase_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def passphrase_addr(passphrase: str, compress: bool = False) -> str:\n    \"\"\"\n    Args:\n        passphrase:\n        compress:\n    Returns:\n        addr\n    \"\"\"\n    return pass_to_addr(passphrase, compress)\ndef dec_addr(dec: int, compress: bool = False) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "dec_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def dec_addr(dec: int, compress: bool = False) -> str:\n    \"\"\"\n    Args:\n        dec:\n        compress:\n    Returns:\n        addr\n    \"\"\"\n    seed = int_to_bytes(dec)\n    return bytes_addr(seed, compress)",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_eth",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_eth(seed: bytes) -> str:\n    \"\"\"\n    Args:\n        seed:\n    Returns:\n        eth_addr\n    \"\"\"\n    return eth_addr(bytes_to_hex(seed))\ndef eth_addr(hex_string: str):\n    \"\"\"",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "eth_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def eth_addr(hex_string: str):\n    \"\"\"\n    Args:\n        hex_string:\n    Returns:\n        eth_addr\n    \"\"\"\n    return ethereum.hex_to_eth(hex_string)\ndef dec_eth(dec: int) -> str:\n    \"\"\"",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "dec_eth",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def dec_eth(dec: int) -> str:\n    \"\"\"\n    Args:\n        dec:\n    Returns:\n        eth_addr\n    \"\"\"\n    return eth_addr(int_to_hex(dec))\ndef bytes_trx(seed: bytes) -> str:\n    \"\"\"",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "bytes_trx",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def bytes_trx(seed: bytes) -> str:\n    \"\"\"\n    Args:\n        seed:\n    Returns:\n        trx_addr\n    \"\"\"\n    trx = tron(bytes_to_hex(seed))\n    return trx.get_address()\ndef trx_addr(hex_string: str):",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "trx_addr",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def trx_addr(hex_string: str):\n    \"\"\"\n    Args:\n        hex_string:\n    Returns:\n        trx_addr\n    \"\"\"\n    trx = tron(hex_string)\n    return trx.address()\ndef dec_trx(dec: int) -> str:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "dec_trx",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def dec_trx(dec: int) -> str:\n    \"\"\"\n    Args:\n        dec:\n    Returns:\n        trx_addr\n    \"\"\"\n    trx = tron(int_to_hex(dec))\n    return trx.get_address()\ndef trx_hash(address: str):",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "trx_hash",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def trx_hash(address: str):\n    \"\"\"\n    Args:\n        address:\n    Returns:\n        trx_addr\n    \"\"\"\n    if address[0] == \"T\":\n        return hex_addr_tron(address)\n    else:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "trx_hex",
+        "kind": 2,
+        "importPath": "libit.lib",
+        "description": "libit.lib",
+        "peekOfCode": "def trx_hex(address: str):\n    \"\"\"\n    Args:\n        address:\n    Returns:\n        trx_addr\n    \"\"\"\n    if address[0] == \"T\":\n        return \"0x\" + hex_addr_tron(address)[2:]\n    else:",
+        "detail": "libit.lib",
+        "documentation": {}
+    },
+    {
+        "label": "check_input",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def check_input(r, s1, s2, z1, z2):\n    if r < 0 or r > p - 1:\n        return False\n    if s1 < 0 or s1 > p - 1:\n        return False\n    if s2 < 0 or s2 > p - 1:\n        return False\n    if z1 < 0 or z1 > p - 1:\n        return False\n    if z2 < 0 or z2 > p - 1:",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "inverse_mod",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def inverse_mod(a, m):\n    \"\"\"Inverse of a mod m.\"\"\"\n    if a == 0:  # pragma: no branch\n        return 0\n    return pow(a, -1, m)\ndef reused(r, s1, s2, z1, z2):\n    checked = check_input(r, s1, s2, z1, z2)\n    if not checked:\n        return False\n    key = []",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "reused",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def reused(r, s1, s2, z1, z2):\n    checked = check_input(r, s1, s2, z1, z2)\n    if not checked:\n        return False\n    key = []\n    for (i, j) in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:\n        z = z1 - z2\n        s = s1 * i + s2 * j\n        r_inv = inverse_mod(r, p)\n        s_inv = inverse_mod(s, p)",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "extract_key",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def extract_key(r: int, s1: int, s2: int, z1: int, z2: int) -> Union[bool, Tuple[str, str]]:  # pragma: no cover\n    \"\"\" Extract Private Key and Public Key From Signature [r, s1, s2, z1, z2]\n    :param r: signature r\n    :param s1: signature s1\n    :param s2: signature s2\n    :param z1: signature z1\n    :param z2: signature z2\n    :returns: private key, public key\n    >>> from libit import reuse\n    >>> r = 0x0861cce1da15fc2dd79f1164c4f7b3e6c1526e7e8d85716578689ca9a5dc349d",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "crack_secret_from_k",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def crack_secret_from_k(generator, signed_value, sig, k):\n    \"\"\"\n    Given a signature of a signed_value and a known k, return the secret exponent.\n    \"\"\"\n    r, s = sig\n    return ((s * k - signed_value) * generator.inverse(r)) % generator.order()\ndef crack_k_from_sigs(generator, sig1, val1, sig2, val2):\n    \"\"\"\n    Given two signatures with the same secret exponent and K value, return that K value.\n    \"\"\"",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "crack_k_from_sigs",
+        "kind": 2,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "def crack_k_from_sigs(generator, sig1, val1, sig2, val2):\n    \"\"\"\n    Given two signatures with the same secret exponent and K value, return that K value.\n    \"\"\"\n    r1, s1 = sig1\n    r2, s2 = sig2\n    if r1 != r2:\n        raise ValueError(\"r values of signature do not match\")\n    k = (r2 * val1 - r1 * val2) * generator.inverse(r2 * s1 - r1 * s2)\n    return k % generator.order()",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "libit.reuse",
+        "description": "libit.reuse",
+        "peekOfCode": "p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141\ndef check_input(r, s1, s2, z1, z2):\n    if r < 0 or r > p - 1:\n        return False\n    if s1 < 0 or s1 > p - 1:\n        return False\n    if s2 < 0 or s2 > p - 1:\n        return False\n    if z1 < 0 or z1 > p - 1:\n        return False",
+        "detail": "libit.reuse",
+        "documentation": {}
+    },
+    {
+        "label": "Wallet",
+        "kind": 6,
+        "importPath": "libit.Tron",
+        "description": "libit.Tron",
+        "peekOfCode": "class Wallet:\n    @staticmethod\n    def get_address(private_key: str) -> str:\n        return hex_to_tron(private_key)\n    @staticmethod\n    def get_decimal(private_key: str) -> int:\n        return int(private_key, 16)\n    @staticmethod\n    def get_hashAddress(address: str) -> str:\n        \"\"\"",
+        "detail": "libit.Tron",
+        "documentation": {}
+    },
+    {
+        "label": "sha256_hex",
+        "kind": 2,
+        "importPath": "libit.Tron",
+        "description": "libit.Tron",
+        "peekOfCode": "def sha256_hex(data):\n    return hashlib.sha256(bytes.fromhex(data)).hexdigest()\ndef hex_to_tron(key_string: str) -> str:\n    \"\"\"\n        convert hex string to tron address\n        :param key_string:\n        :type key_string: str\n        :return address:\n        :rtype: str\n        \"\"\"",
+        "detail": "libit.Tron",
+        "documentation": {}
+    },
+    {
+        "label": "hex_to_tron",
+        "kind": 2,
+        "importPath": "libit.Tron",
+        "description": "libit.Tron",
+        "peekOfCode": "def hex_to_tron(key_string: str) -> str:\n    \"\"\"\n        convert hex string to tron address\n        :param key_string:\n        :type key_string: str\n        :return address:\n        :rtype: str\n        \"\"\"\n    keybytes = bytes.fromhex(key_string)\n    sk = ecdsa.SigningKey.from_string(keybytes, curve=ecdsa.SECP256k1)",
+        "detail": "libit.Tron",
+        "documentation": {}
+    },
+    {
+        "label": "hex_addr_tron",
+        "kind": 2,
+        "importPath": "libit.Tron",
+        "description": "libit.Tron",
+        "peekOfCode": "def hex_addr_tron(address: str):\n    return b58decode(address).hex()[:-8]\nclass Wallet:\n    @staticmethod\n    def get_address(private_key: str) -> str:\n        return hex_to_tron(private_key)\n    @staticmethod\n    def get_decimal(private_key: str) -> int:\n        return int(private_key, 16)\n    @staticmethod",
+        "detail": "libit.Tron",
+        "documentation": {}
+    },
+    {
+        "label": "AddressValidator",
+        "kind": 6,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "class AddressValidator:\n    \"\"\"Utility class for address validation.\"\"\"\n    @staticmethod\n    def validate_bitcoin(address: str) -> dict:\n        \"\"\"\n        Comprehensive Bitcoin address validation.\n        Args:\n            address: Bitcoin address\n        Returns:\n            Dictionary with validation results",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_private_key",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def is_valid_private_key(private_key: str) -> bool:\n    \"\"\"\n    Validate if a string is a valid private key.\n    Args:\n        private_key: String to validate\n    Returns:\n        True if valid private key, False otherwise\n    \"\"\"\n    if not isinstance(private_key, str):\n        return False",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_bitcoin_address",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def is_valid_bitcoin_address(address: str) -> Tuple[bool, Optional[str]]:\n    \"\"\"\n    Validate Bitcoin address and return its type.\n    Args:\n        address: Bitcoin address string\n    Returns:\n        Tuple of (is_valid, address_type)\n    \"\"\"\n    if not isinstance(address, str):\n        return False, None",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_ethereum_address",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def is_valid_ethereum_address(address: str) -> bool:\n    \"\"\"\n    Validate Ethereum address.\n    Args:\n        address: Ethereum address string\n    Returns:\n        True if valid Ethereum address, False otherwise\n    \"\"\"\n    if not isinstance(address, str):\n        return False",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_tron_address",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def is_valid_tron_address(address: str) -> bool:\n    \"\"\"\n    Validate Tron address.\n    Args:\n        address: Tron address string\n    Returns:\n        True if valid Tron address, False otherwise\n    \"\"\"\n    if not isinstance(address, str):\n        return False",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "format_private_key",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def format_private_key(private_key: Union[str, int, bytes]) -> str:\n    \"\"\"\n    Format private key to standard 64-character hex string.\n    Args:\n        private_key: Private key in various formats\n    Returns:\n        64-character hex string\n    \"\"\"\n    if isinstance(private_key, str):\n        # Remove 0x prefix if present",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "compress_public_key",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def compress_public_key(public_key: bytes) -> bytes:\n    \"\"\"\n    Compress an uncompressed public key.\n    Args:\n        public_key: Uncompressed public key (65 bytes)\n    Returns:\n        Compressed public key (33 bytes)\n    \"\"\"\n    if len(public_key) != 65 or public_key[0] != 0x04:\n        raise ValueError(\"Invalid uncompressed public key\")",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "decompress_public_key",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def decompress_public_key(public_key: bytes) -> bytes:\n    \"\"\"\n    Decompress a compressed public key.\n    Args:\n        public_key: Compressed public key (33 bytes)\n    Returns:\n        Uncompressed public key (65 bytes)\n    \"\"\"\n    if len(public_key) != 33:\n        raise ValueError(\"Invalid compressed public key length\")",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "secure_random_bytes",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def secure_random_bytes(length: int) -> bytes:\n    \"\"\"\n    Generate cryptographically secure random bytes.\n    Args:\n        length: Number of bytes to generate\n    Returns:\n        Random bytes\n    \"\"\"\n    import secrets\n    return secrets.token_bytes(length)",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "entropy_to_private_key",
+        "kind": 2,
+        "importPath": "libit.utils",
+        "description": "libit.utils",
+        "peekOfCode": "def entropy_to_private_key(entropy: Union[str, bytes]) -> str:\n    \"\"\"\n    Convert entropy to private key using SHA256.\n    Args:\n        entropy: Entropy as string or bytes\n    Returns:\n        64-character hex private key\n    \"\"\"\n    if isinstance(entropy, str):\n        entropy = entropy.encode(\"utf-8\")",
+        "detail": "libit.utils",
+        "documentation": {}
+    },
+    {
+        "label": "WalletGenerator",
+        "kind": 6,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "class WalletGenerator:\n    \"\"\"Unified wallet generator for multiple cryptocurrencies.\"\"\"\n    @staticmethod\n    def generate_private_key() -> str:\n        \"\"\"\n        Generate a cryptographically secure random private key.\n        Returns:\n            64-character hexadecimal private key string\n        \"\"\"\n        return secrets.randbits(256).to_bytes(32, \"big\").hex()",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "BulkWalletGenerator",
+        "kind": 6,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "class BulkWalletGenerator:\n    \"\"\"Bulk wallet generation utilities.\"\"\"\n    @staticmethod\n    def generate_bitcoin_wallets(\n        count: int, compressed: bool = True\n    ) -> List[Dict[str, Any]]:\n        \"\"\"\n        Generate multiple Bitcoin wallets.\n        Args:\n            count: Number of wallets to generate",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "generate_private_key",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def generate_private_key() -> str:\n    \"\"\"Generate a cryptographically secure private key.\"\"\"\n    return WalletGenerator.generate_private_key()\ndef generate_bitcoin_wallet(compressed: bool = True) -> Dict[str, Any]:\n    \"\"\"Generate a Bitcoin wallet.\"\"\"\n    return WalletGenerator.generate_bitcoin_wallet(compressed)\ndef generate_ethereum_wallet() -> Dict[str, Any]:\n    \"\"\"Generate an Ethereum wallet.\"\"\"\n    return WalletGenerator.generate_ethereum_wallet()\ndef generate_tron_wallet() -> Dict[str, Any]:",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "generate_bitcoin_wallet",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def generate_bitcoin_wallet(compressed: bool = True) -> Dict[str, Any]:\n    \"\"\"Generate a Bitcoin wallet.\"\"\"\n    return WalletGenerator.generate_bitcoin_wallet(compressed)\ndef generate_ethereum_wallet() -> Dict[str, Any]:\n    \"\"\"Generate an Ethereum wallet.\"\"\"\n    return WalletGenerator.generate_ethereum_wallet()\ndef generate_tron_wallet() -> Dict[str, Any]:\n    \"\"\"Generate a Tron wallet.\"\"\"\n    return WalletGenerator.generate_tron_wallet()\ndef generate_multi_wallet(compressed: bool = True) -> Dict[str, Dict[str, Any]]:",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "generate_ethereum_wallet",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def generate_ethereum_wallet() -> Dict[str, Any]:\n    \"\"\"Generate an Ethereum wallet.\"\"\"\n    return WalletGenerator.generate_ethereum_wallet()\ndef generate_tron_wallet() -> Dict[str, Any]:\n    \"\"\"Generate a Tron wallet.\"\"\"\n    return WalletGenerator.generate_tron_wallet()\ndef generate_multi_wallet(compressed: bool = True) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate multi-network wallet.\"\"\"\n    return WalletGenerator.generate_multi_wallet(compressed)\ndef from_private_key(",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "generate_tron_wallet",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def generate_tron_wallet() -> Dict[str, Any]:\n    \"\"\"Generate a Tron wallet.\"\"\"\n    return WalletGenerator.generate_tron_wallet()\ndef generate_multi_wallet(compressed: bool = True) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate multi-network wallet.\"\"\"\n    return WalletGenerator.generate_multi_wallet(compressed)\ndef from_private_key(\n    private_key: str, compressed: bool = True\n) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate wallets from existing private key.\"\"\"",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "generate_multi_wallet",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def generate_multi_wallet(compressed: bool = True) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate multi-network wallet.\"\"\"\n    return WalletGenerator.generate_multi_wallet(compressed)\ndef from_private_key(\n    private_key: str, compressed: bool = True\n) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate wallets from existing private key.\"\"\"\n    return WalletGenerator.from_private_key(private_key, compressed)",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "from_private_key",
+        "kind": 2,
+        "importPath": "libit.wallet",
+        "description": "libit.wallet",
+        "peekOfCode": "def from_private_key(\n    private_key: str, compressed: bool = True\n) -> Dict[str, Dict[str, Any]]:\n    \"\"\"Generate wallets from existing private key.\"\"\"\n    return WalletGenerator.from_private_key(private_key, compressed)",
+        "detail": "libit.wallet",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "examples",
+        "description": "examples",
+        "peekOfCode": "def main():\n    print(\"=== Libit Bitcoin Wallet Library Examples ===\\n\")\n    # Example 1: Generate a new Bitcoin wallet\n    print(\"1. Generate New Bitcoin Wallet:\")\n    print(\"-\" * 40)\n    new_wallet = generate_bitcoin_wallet(compressed=True)\n    print(f\"Private Key: {new_wallet['private_key']}\")\n    print(f\"WIF: {new_wallet['wif']}\")\n    print(\"Addresses:\")\n    for addr_type, address in new_wallet[\"addresses\"].items():",
+        "detail": "examples",
+        "documentation": {}
+    },
+    {
+        "label": "TestBitcoinWallet",
+        "kind": 6,
+        "importPath": "tests",
+        "description": "tests",
+        "peekOfCode": "class TestBitcoinWallet:\n    \"\"\"Test Bitcoin wallet functionality.\"\"\"\n    def setup_method(self):\n        \"\"\"Setup test data.\"\"\"\n        self.test_private_key = (\n            \"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2\"\n        )\n        self.wallet = Bitcoin(self.test_private_key)\n    def test_private_key_storage(self):\n        \"\"\"Test private key is stored correctly.\"\"\"",
+        "detail": "tests",
+        "documentation": {}
+    },
+    {
+        "label": "TestWalletGenerator",
+        "kind": 6,
+        "importPath": "tests",
+        "description": "tests",
+        "peekOfCode": "class TestWalletGenerator:\n    \"\"\"Test wallet generator functionality.\"\"\"\n    def test_generate_private_key(self):\n        \"\"\"Test private key generation.\"\"\"\n        private_key = WalletGenerator.generate_private_key()\n        assert len(private_key) == 64\n        assert is_valid_private_key(private_key)\n    def test_generate_bitcoin_wallet(self):\n        \"\"\"Test Bitcoin wallet generation.\"\"\"\n        wallet = WalletGenerator.generate_bitcoin_wallet()",
+        "detail": "tests",
+        "documentation": {}
+    },
+    {
+        "label": "TestAddressValidator",
+        "kind": 6,
+        "importPath": "tests",
+        "description": "tests",
+        "peekOfCode": "class TestAddressValidator:\n    \"\"\"Test address validation functionality.\"\"\"\n    def setup_method(self):\n        \"\"\"Setup validator.\"\"\"\n        self.validator = AddressValidator()\n    def test_validate_bitcoin_p2pkh(self):\n        \"\"\"Test P2PKH address validation.\"\"\"\n        # Valid P2PKH addresses for testing\n        valid_addresses = [\n            \"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa\",",
+        "detail": "tests",
+        "documentation": {}
+    },
+    {
+        "label": "TestUtilities",
+        "kind": 6,
+        "importPath": "tests",
+        "description": "tests",
+        "peekOfCode": "class TestUtilities:\n    \"\"\"Test utility functions.\"\"\"\n    def test_is_valid_private_key(self):\n        \"\"\"Test private key validation.\"\"\"\n        valid_key = \"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2\"\n        assert is_valid_private_key(valid_key) == True\n        invalid_keys = [\n            \"invalid\",\n            \"12345\",\n            \"0000000000000000000000000000000000000000000000000000000000000000\",  # Zero",
+        "detail": "tests",
+        "documentation": {}
+    }
+]

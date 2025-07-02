@@ -1,51 +1,58 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='libit',
-    version="4.3.3",
-    license='http://opensource.org/licenses/MIT',
+    name="libit",
+    version="5.0.0",
+    license="http://opensource.org/licenses/MIT",
     packages=find_packages(),
-    install_requires=[
-        'pycryptodome',
-        'ecdsa'
-    ],
-
+    install_requires=["pycryptodome>=3.15.0", "ecdsa>=0.18.0"],
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent"
+        "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Security :: Cryptography",
     ],
-
+    python_requires=">=3.7",
     long_description=long_description,
-
     long_description_content_type="text/markdown",
-
-    author='Mmdrza',
-
-    keywords=['bitcoin', 'cryptography', 'python', 'library', 'crypto', 'libit', 'ethereum', 'tron'],
-
+    author="Mmdrza",
+    keywords=[
+        "bitcoin",
+        "ethereum",
+        "tron",
+        "cryptography",
+        "wallet",
+        "cryptocurrency",
+        "blockchain",
+        "private-key",
+        "address",
+        "p2pkh",
+        "p2sh",
+        "p2wpkh",
+        "p2wsh",
+        "segwit",
+        "bech32",
+    ],
     include_package_data=True,
-
-    author_email='Pymmdrza@gmail.com',
-
-    description='Library Bitcoin package for python convert and generate wallet',
-
-    url='https://github.com/pylibit',
-
+    author_email="Pymmdrza@gmail.com",
+    description="Professional Bitcoin, Ethereum and Tron wallet generation library with support for multiple address formats",
+    url="https://libit.readthedocs.io/",
     project_urls={
-        'Bug Tracker': 'https://github.com/pylibit/issues',
-
-        'Source Code': 'https://github.com/pylibit/libit',
-
-        'Documentation': 'https://pylibit.github.io/libit/',
-
-        'Website': 'https://mmdrza.com',
-
-        'Medium': 'https://mdrza.medium.com'
-
-    }
-
+        "Bug Tracker": "https://github.com/pylibit/libit/issues",
+        "Source Code": "https://github.com/pylibit/libit",
+        "Documentation": "https://pylibit.github.io/libit/",
+        "Website Owner": "https://mmdrza.com",
+        "documentation": "https://libit.readthedocs.io/",
+    },
 )
