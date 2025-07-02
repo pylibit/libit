@@ -1,235 +1,352 @@
 
-# Libit - Professional Cryptocurrency Wallet Library
+# Libit - Professional Multi-Cryptocurrency Wallet Library
 
 [![Read the Docs](https://img.shields.io/readthedocs/libit)](https://libit.readthedocs.io 'libit documentation') [![GitHub commit check runs](https://img.shields.io/github/check-runs/pylibit/libit/main)](https://github.com/pylibit/libit)  [![GitHub last commit](https://img.shields.io/github/last-commit/pylibit/libit)](https://github.com/pylibit/libit)  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pylibit/libit)](https://github.com/pylibit/libit)  [![GitHub top language](https://img.shields.io/github/languages/top/pylibit/libit)](https://github.com/pylibit/libit)  [![PyPI - Downloads](https://img.shields.io/pypi/dm/libit)](https://pypi.org/project/libit/)  [![Website](https://img.shields.io/website?url=https%3A%2F%2Flibit.readthedocs.io&up_color=blue&style=plastic)](https://libit.readthedocs.io)
 
-A professional, fast and comprehensive Python library for cryptocurrency wallet generation and management. Supports Bitcoin (with all address formats), Ethereum, and Tron networks.
+A professional, fast and comprehensive Python library for multi-cryptocurrency wallet generation and management. Supports **Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Ethereum, and Tron** networks with all address formats.
 
 ## Features
 
-- **Bitcoin Address Generation**: `P2PKH`, `P2SH`, `P2WPKH`, `P2WSH` (Legacy, Script, SegWit v0)
-- **Multiple Networks**: Bitcoin, Ethereum, Tron
-- **Secure Key Generation**: Cryptographically secure random key generation
-- **Address Validation**: Comprehensive validation for all supported address types
+- **9 Cryptocurrencies**: Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash, Vertcoin, Ethereum, Tron
+- **All Address Types**: Legacy, Script, SegWit (where supported)  
+- **Ultra-Short Function Names**: Minimal API like `btc()`, `eth()`, `valid()`, `check()`
+- **Professional DataClasses**: Type-safe structure with comprehensive error handling
+- **Enhanced Validation**: Auto-detect and validate all supported cryptocurrencies
 - **Bulk Operations**: Generate multiple wallets efficiently
-- **Professional API**: Clean, intuitive interface with full type hints
-- **Backward Compatibility**: Maintains compatibility with previous versions
+- **Secure Generation**: Cryptographically secure random key generation
+- **Full Backward Compatibility**: All legacy functions still work
 
 ## Installation
 
-Install the library via pip:
-
 ```bash
-pip install libit
+pip install libit --upgrade
 ```
-mac and linux : `pip3 install libit`
 
 ## Quick Start
 
-### Generate a Bitcoin Wallet with All Address Types
-
-generate a Bitcoin wallet that supports all address formats , including Legacy, Script, and SegWit:
-
+### Multi-Cryptocurrency Wallet
 
 ```python
-from libit import Bitcoin
+from libit import gen_key, multi_wallet
 
-# Create wallet from private key
-wallet = Bitcoin("a1b2c3d4e5f6789...")
+# Generate secure private key
+private_key = gen_key()
 
-# Get all address formats
-addresses = wallet.get_all_addresses()
-print(addresses)
-# {
-#     'p2pkh': '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa',    # Legacy (starts with 1)
-#     'p2sh': '3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy',     # Script (starts with 3)
-#     'p2wpkh': 'bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4',  # SegWit (starts with bc1)
-#     'p2wsh': 'bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qccfmv3'   # SegWit Script
-# }
+# Create multi-crypto wallet
+wallet = multi_wallet(private_key)
 
-# Get complete wallet information
-wallet_info = wallet.get_wallet_info()
-print(wallet_info)
+# Access different cryptocurrencies
+btc = wallet.btc()      # Bitcoin
+ltc = wallet.ltc()      # Litecoin  
+doge = wallet.doge()    # Dogecoin
+bch = wallet.bch()      # Bitcoin Cash
+dash = wallet.dash()    # Dash
+eth = wallet.eth()      # Ethereum
+trx = wallet.trx()      # Tron
+
+print(f"BTC Legacy: {btc.addresses.legacy}")
+print(f"LTC Legacy: {ltc.addresses.legacy}")
+print(f"ETH Address: {eth['address']}")
 ```
 
-### Generate New Wallets
-
-generate a new Bitcoin wallet with all address formats, or generate wallets for multiple networks (Bitcoin, Ethereum, Tron):
+### Individual Coin Wallets
 
 ```python
-from libit import generate_bitcoin_wallet, generate_multi_wallet
+from libit import btc_wallet, ltc_wallet, doge_wallet, eth_wallet
 
-# Generate a new Bitcoin wallet
-btc_wallet = generate_bitcoin_wallet()
-print(f"Private Key: {btc_wallet['private_key']}")
-print(f"P2PKH Address: {btc_wallet['addresses']['p2pkh']}")
-print(f"SegWit Address: {btc_wallet['addresses']['p2wpkh']}")
+private_key = "your_private_key_here"
 
-# Generate wallets for all supported networks
-multi_wallet = generate_multi_wallet()
-print(f"Bitcoin: {multi_wallet['bitcoin']['addresses']['p2pkh']}")
-print(f"Ethereum: {multi_wallet['ethereum']['address']}")
-print(f"Tron: {multi_wallet['tron']['address']}")
+# Individual wallets with short function names
+### Ultra-Short Function Names
+
+Generate wallets with minimal code:
+
+```python
+from libit import btc, ltc, doge, bch, dash, zcash, vtc, eth, trx
+
+# Auto-generate private keys and create wallets
+btc_wallet = btc()
+ltc_wallet = ltc()
+doge_wallet = doge()
+eth_wallet = eth()
+trx_wallet = trx()
+
+print(f"Bitcoin: {btc_wallet.addresses.legacy}")
+print(f"Litecoin: {ltc_wallet.addresses.legacy}") 
+print(f"Dogecoin: {doge_wallet.addresses.legacy}")
+print(f"Ethereum: {eth_wallet['address']}")
+print(f"Tron: {trx_wallet['address']}")
+```
+
+### Traditional Function Names
+
+```python
+from libit import gen_key, btc_wallet, ltc_wallet, doge_wallet, eth_wallet
+
+# Generate with custom private key
+private_key = gen_key()
+btc = btc_wallet(private_key)
+ltc = ltc_wallet(private_key)
+doge = doge_wallet(private_key)
+eth = eth_wallet(private_key)
+
+print(f"Bitcoin: {btc.addresses.legacy}")
+print(f"Litecoin: {ltc.addresses.legacy}")
+print(f"Dogecoin: {doge.addresses.legacy}")
+print(f"Ethereum: {eth['address']}")
 ```
 
 ### Address Validation
 
-Address validation for Bitcoin, Ethereum, and Tron networks:
-
+Enhanced validation with ultra-short function names:
 
 ```python
-from libit import AddressValidator
+from libit import check_addr, is_valid, valid, coin_type, check
 
-# Validate any cryptocurrency address
-validator = AddressValidator()
+# Traditional validation
+result = check_addr("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
+print(f"Valid: {result.valid}")
+print(f"Coin: {result.coin}")
+print(f"Type: {result.addr_type}")
 
-# Bitcoin addresses
-btc_result = validator.validate_bitcoin("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
-print(btc_result)  # {'is_valid': True, 'type': 'P2PKH', 'network': 'bitcoin'}
+# Ultra-short validation
+is_valid_addr = valid("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4")
+detected_coin = coin_type("LdP8Qox1VAhCzLJNqrr74YovaWYyNBUWvL")
+quick_check = check("DQE1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
 
-# Auto-detect network and validate
-result = validator.validate_any("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4")
-print(result)  # {'is_valid': True, 'type': 'P2WPKH', 'network': 'bitcoin'}
-```
+print(f"valid() → {is_valid_addr}")
+print(f"coin_type() → {detected_coin}")  # ltc
+print(f"check() → {quick_check.coin}")   # doge
 
 ### Bulk Wallet Generation
 
-bulk wallet generation for Bitcoin and multi-network wallets, which allows you to create multiple wallets efficiently:
+Generate multiple wallets efficiently:
 
 ```python
-from libit import BulkWalletGenerator
+from libit import gen_wallets, gen_multi_wallets
 
 # Generate 100 Bitcoin wallets
-wallets = BulkWalletGenerator.generate_bitcoin_wallets(100)
+btc_wallets = gen_wallets(100, 'btc')
+for wallet in btc_wallets[:3]:  # Show first 3
+    print(f"BTC: {wallet.addresses.legacy}")
 
-# Generate 50 multi-network wallets
-multi_wallets = BulkWalletGenerator.generate_multi_wallets(50)
+# Generate 50 Litecoin wallets  
+ltc_wallets = gen_wallets(50, 'ltc')
+
+# Generate multi-cryptocurrency wallets
+multi_wallets = gen_multi_wallets(10)
+for wallet in multi_wallets[:2]:  # Show first 2
+    print(f"BTC: {wallet['btc']['addresses']['legacy']}")
+    print(f"ETH: {wallet['eth']['address']}")
+    print(f"ZEC: {wallet['zcash']['addresses']['legacy']}")
 ```
 
-## Detailed Usage
+### Multi-Wallet Manager
 
-In this section, we will cover the detailed usage of the library, including how to work with different address types, private keys, and networks.
-
-### Bitcoin Address Types
-
-The library supports all major Bitcoin address formats:
+Use one private key for all cryptocurrencies:
 
 ```python
+from libit import multi_wallet, gen_key
+
+# Create multi-wallet (auto-generates key)
+multi = multi_wallet()
+
+# Or use custom key
+key = gen_key()
+multi = multi_wallet(key)
+
+# Access individual cryptocurrencies
+btc_info = multi.btc()
+ltc_info = multi.ltc()
+eth_info = multi.eth()
+zcash_info = multi.zcash()
+
+# Get all supported cryptocurrencies
+all_wallets = multi.all()
+print(f"Generated wallets for {len(all_wallets)} cryptocurrencies")
+```
+
+## Supported Cryptocurrencies
+
+| Coin | Symbol | Legacy | Script | SegWit | Short Function | Full Function |
+|------|--------|--------|--------|--------|----------------|---------------|
+| Bitcoin | BTC | ✅ (1...) | ✅ (3...) | ✅ (bc1...) | `btc()` | `btc_wallet()` |
+| Litecoin | LTC | ✅ (L...) | ✅ (M...) | ✅ (ltc1...) | `ltc()` | `ltc_wallet()` |
+| Dogecoin | DOGE | ✅ (D...) | ✅ (9...) | ❌ | `doge()` | `doge_wallet()` |
+| Bitcoin Cash | BCH | ✅ (1...) | ✅ (3...) | ❌ | `bch()` | `bch_wallet()` |
+| Dash | DASH | ✅ (X...) | ✅ (7...) | ❌ | `dash()` | `dash_wallet()` |
+| Zcash | ZEC | ✅ (t1...) | ✅ (t3...) | ❌ | `zcash()` | `zcash_wallet()` |
+| Vertcoin | VTC | ✅ (V...) | ✅ (3...) | ✅ (vtc1...) | `vtc()` | `vtc_wallet()` |
+| Ethereum | ETH | ✅ (0x...) | ❌ | ❌ | `eth()` | `eth_wallet()` |
+| Tron | TRX | ✅ (T...) | ❌ | ❌ | `trx()` | `trx_wallet()` |
+
+
+## Quick API Reference
+
+### Ultra-Short Functions
+
+```python
+from libit import btc, ltc, doge, eth, trx, valid, check, coin_type
+
+# Generate wallets (auto-generates private keys)
+btc_wallet = btc()
+eth_wallet = eth()
+
+# Validation
+is_valid = valid("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
+coin = coin_type("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4") 
+result = check("LdP8Qox1VAhCzLJNqrr74YovaWYyNBUWvL")
+```
+
+### Professional DataClasses
+
+
+The library uses Python dataclasses for better structure and type safety. Each wallet function returns a structured `WalletInfo` dataclass, and validation functions return a `ValidationResult` dataclass.
+
+```python
+from libit import WalletInfo, ValidationResult, AddressSet
+
+# All wallet functions return structured dataclasses
+wallet = btc()  # Returns WalletInfo dataclass
+print(wallet.addresses.legacy)  # Type-safe access
+print(wallet.to_dict())  # Convert to dictionary
+
+# Validation returns structured results
+result = check("address")  # Returns ValidationResult dataclass
+print(result.valid, result.coin, result.addr_type)
+
+## Bulk Generation
+
+### Bulk Generation
+
+Generate multiple wallets efficiently:
+
+```python
+from libit import gen_wallets, gen_multi_wallets
+
+# Generate 100 Bitcoin wallets
+btc_wallets = gen_wallets(100, 'btc')
+
+# Generate 50 Litecoin wallets
+ltc_wallets = gen_wallets(50, 'ltc')
+
+# Generate 10 multi-cryptocurrency wallets
+multi_wallets = gen_multi_wallets(10)
+```
+
+## Advanced Usage
+
+Advanced usage includes complete multi-wallet access and professional data structure:
+
+
+### Complete Multi-Wallet Access
+
+Create a multi-wallet that supports all cryptocurrencies with a single private key:
+
+```python
+from libit import multi_wallet
+
+wallet = multi_wallet("your_private_key_here")
+
+# Get all cryptocurrencies at once
+all_coins = wallet.all_coins()
+
+# Access specific coins
+btc_info = wallet.btc()
+print(f"BTC WIF: {btc_info.wif}")
+print(f"BTC Decimal: {btc_info.decimal}")
+print(f"Legacy: {btc_info.addresses.legacy}")
+print(f"Script: {btc_info.addresses.script}")
+```
+
+### DataClass Benefits
+
+The library uses Python dataclasses for better structure:
+
+```python
+from libit import btc_wallet
+
+wallet = btc_wallet("private_key_here")
+
+# Professional data structure
+print(f"Network: {wallet.network}")
+print(f"Compressed: {wallet.compressed}")
+print(f"WIF: {wallet.wif}")
+
+# Type-safe address access
+addresses = wallet.addresses
+print(f"Legacy: {addresses.legacy}")
+print(f"Script: {addresses.script}")
+```
+
+## Backward Compatibility
+
+All legacy functions continue to work:
+
+```python
+# Legacy Bitcoin class (still supported)
 from libit import Bitcoin
+wallet = Bitcoin("private_key")
+addresses = wallet.get_all_addresses()
 
-wallet = Bitcoin("private_key_here")
+# Legacy functions (still supported)
+from libit import privatekey_addr, generate_bitcoin_wallet
+addr = privatekey_addr("private_key")
+new_wallet = generate_bitcoin_wallet()
 
-# Legacy P2PKH (Pay-to-Public-Key-Hash) - starts with '1'
-p2pkh = wallet.get_p2pkh_address()
-
-# Script P2SH (Pay-to-Script-Hash) - starts with '3'  
-p2sh = wallet.get_p2sh_address()
-
-# SegWit P2WPKH (Pay-to-Witness-Public-Key-Hash) - starts with 'bc1'
-p2wpkh = wallet.get_p2wpkh_address()
-
-# SegWit P2WSH (Pay-to-Witness-Script-Hash) - starts with 'bc1'
-p2wsh = wallet.get_p2wsh_address()
+# Legacy Ethereum & Tron (still supported)
+from libit import Ethereum, tron
+eth = Ethereum("private_key")
+trx = tron("private_key")
 ```
-
-### Working with Private Keys
-
-You can generate, validate, and format private keys using the library's utilities:
-
-```python
-from libit import generate_private_key, is_valid_private_key, format_private_key
-
-# Generate cryptographically secure private key
-private_key = generate_private_key()
-
-# Validate private key
-if is_valid_private_key(private_key):
-    print("Valid private key")
-
-# Format private key (handles various input formats)
-formatted = format_private_key("0x" + private_key)  # Removes 0x prefix
-```
-
-### Ethereum and Tron
-
-You can generate, validate, and format private keys using the library's utilities, including support for Ethereum and Tron networks:
-
-```python
-from libit import Ethereum, Tron
-
-# Ethereum wallet
-eth = Ethereum("private_key_here")
-eth_address = eth.get_address()
-
-# Tron wallet  
-trx = tron("private_key_here")
-trx_address = trx.get_address()
-evm_address = trx.get_evmAddress()  # EVM-compatible format
-```
-
-### Legacy Functions (Backward Compatibility)
-
-All previous functions are still available for backward compatibility. You can use the legacy functions as before:
-
-
-```python
-from libit import privatekey_addr, bytes_addr, wif_addr
-
-# These functions work exactly as before
-address = privatekey_addr("private_key_hex")
-address_from_bytes = bytes_addr(b"32_bytes_seed")
-address_from_wif = wif_addr("WIF_string")
-```
-
-### Reuse Method
-
-Extract Private Key and Public Key From Transaction ID (hash) for reuse type wallet:
-
-```python
-import libit
-from libit import reuse
-
-r = 0x0861cce1da15fc2dd79f1164c4f7b3e6c1526e7e8d85716578689ca9a5dc349d
-s1 = 0x6cf26e2776f7c94cafcee05cc810471ddca16fa864d13d57bee1c06ce39a3188
-s2 = 0x4ba75bdda43b3aab84b895cfd9ef13a477182657faaf286a7b0d25f0cb9a7de2
-z1 = 0x01b125d18422cdfa7b153f5bcf5b01927cf59791d1d9810009c70cd37b14f4e6
-z2 = 0x339ff7b1ced3a45c988b3e4e239ea745db3b2b3fda6208134691bd2e4a37d6e1
-
-pvk, pub = reuse.extract_key(r, s1, s2, z1, z2)
-# pvk: e773cf35fce567d0622203c28f67478a3361bae7e6eb4366b50e1d27eb1ed82e
-# pub: eaa57720a5b012351d42b2d9ed6409af2b7cff11d2b8631684c1c97f49685fbb
-# convert private key to bitcoin address
-address = libit.privatekey_addr(pvk, True)
-# output: 1FCpHq81nNLPkppTmidmoHAUy8xApTZ292
-# (Total Transaction: 8 | Received: 1.56534788 BTC | Total Sent: 1.56534788 BTC)
-
-```
-
 
 ## Security Features
 
 - **Cryptographically Secure**: Uses `secrets` module for random number generation
-- **Input Validation**: Comprehensive validation of all inputs
-- **Error Handling**: Graceful error handling with informative messages
-- **No External Dependencies**: Minimal dependencies for security
+- **Input Validation**: Comprehensive validation of all inputs with proper error handling
+- **DataClass Safety**: Type-safe data structures prevent runtime errors
+- **No External Dependencies**: Minimal dependencies for maximum security
+- **Professional Error Handling**: Graceful error handling with informative messages
+
+## Testing
+
+Run the test suite:
+
+```bash
+python -m pytest tests_enhanced.py -v
+```
+
+Or test basic functionality:
+
+```bash
+python examples_enhanced.py
+```
 
 ## API Reference
 
-### Classes
+### Core Functions
 
-- **`Bitcoin`**: Complete Bitcoin wallet functionality
-- **`WalletGenerator`**: Generate wallets for multiple networks
-- **`BulkWalletGenerator`**: Efficient bulk wallet generation
-- **`AddressValidator`**: Validate addresses across all networks
+- `gen_key()` - Generate secure private key
+- `multi_wallet(key)` - Create multi-cryptocurrency wallet
+- `btc_wallet(key)` - Bitcoin wallet
+- `ltc_wallet(key)` - Litecoin wallet  
+- `doge_wallet(key)` - Dogecoin wallet
+- `bch_wallet(key)` - Bitcoin Cash wallet
+- `dash_wallet(key)` - Dash wallet
+- `eth_wallet(key)` - Ethereum wallet
+- `trx_wallet(key)` - Tron wallet
 
-### Address Types Supported
+### Validation Functions
 
-| Type | Description | Starts With | Example |
-|------|-------------|-------------|---------|
-| P2PKH | Legacy | `1` | `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` |
-| P2SH | Script | `3` | `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy` |
-| P2WPKH | SegWit v0 | `bc1` | `bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4` |
-| P2WSH | SegWit v0 Script | `bc1` | `bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q...` |
+- `check_addr(address)` - Comprehensive address validation
+- `is_valid(address)` - Quick validation check
+- `get_coin_type(address)` - Auto-detect cryptocurrency
+- `validate_multiple(addresses)` - Bulk validation
+
+### Bulk Generation
+
+- `gen_wallets(count, coin_type)` - Generate multiple wallets for specific coin
+- `gen_multi_wallets(count)` - Generate multiple multi-crypto wallets
 
 ## Contributing
 
@@ -237,12 +354,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Support
 
 - **Documentation**: [https://pylibit.github.io/libit/](https://pylibit.github.io/libit/)
-- **Issues**: [GitHub Issues](https://github.com/pylibit/libit/issues)
+- **Issues**: [GitHub Issues](https://github.com/pylibit/libit/issues)  
 - **Email**: Pymmdrza@gmail.com
+
+---
+
+**⚠️ Disclaimer**: This library is for educational and development purposes. Always ensure proper security practices when handling private keys and cryptocurrency assets in production environments.
 
 

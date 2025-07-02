@@ -5,6 +5,97 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.3.0] - 2025-07-02
+
+### 🎉 Major Features Added
+
+#### New Cryptocurrency Support
+- **Zcash (ZEC)**: Complete support with Legacy (t1...) and Script (t3...) addresses
+- **Vertcoin (VTC)**: Full support including Legacy (V...), Script (3...), and SegWit (vtc1...) addresses
+
+#### Ultra-Short Function Names
+- `btc()`, `ltc()`, `doge()`, `bch()`, `dash()`, `zcash()`, `vtc()` - Generate wallets with minimal code
+- `eth()`, `trx()` - Ethereum and Tron wallet generation
+- `valid()`, `check()`, `coin_type()` - Ultra-short validation functions
+- All functions support auto-generation of private keys or custom key input
+
+#### Enhanced DataClass Integration  
+- Professional `WalletInfo` dataclass with `to_dict()` method
+- Enhanced `ValidationResult` dataclass with `to_dict()` method
+- Better error handling and type safety throughout the library
+- Structured data access with intellisense support
+
+#### Advanced Validation Features
+- Auto-detection support for all 9 cryptocurrencies
+- Enhanced validation for Zcash and Vertcoin addresses
+- Ultra-short validation methods in `Validator` class: `btc()`, `ltc()`, `doge()`, etc.
+- Comprehensive error handling for invalid inputs
+
+### 🔧 Improvements
+
+#### API Enhancements
+- **Crypto Class**: Added short method names (`legacy()`, `script()`, `wif()`, `decimal()`, `addrs()`, `info()`)
+- **MultiWallet Class**: Enhanced with better error handling and caching
+- **Bulk Generation**: Improved with validation limits and error handling
+- **Private Key Handling**: Automatic 0x prefix removal and validation
+
+#### Performance & Reliability
+- Better caching for public key generation
+- Enhanced error messages with detailed context
+- Input validation for all functions
+- Comprehensive type hints and documentation
+
+#### Developer Experience
+- Ultra-short function aliases for rapid development
+- Professional dataclass structure for type safety
+- Better code organization and modularity
+- Comprehensive examples and tests
+
+### 🧪 Testing & Quality
+
+#### Enhanced Test Suite
+- New comprehensive test file `tests_multi_crypto.py`
+- Tests for all 9 supported cryptocurrencies
+- Validation testing for all address types
+- Error handling and edge case testing
+- DataClass functionality testing
+
+#### Example Updates
+- New `examples_multi_crypto.py` with comprehensive demonstrations
+- Examples for all new features and cryptocurrencies
+- Ultra-short function usage examples
+- Professional dataclass usage examples
+
+#### CI/CD Improvements
+- Enhanced GitHub Actions with security scanning
+- Type checking with mypy
+- Code quality checks with bandit
+- Comprehensive test coverage
+- Multi-Python version testing (3.8-3.12)
+
+### 📚 Documentation
+
+#### Updated README
+- Comprehensive documentation for all 9 cryptocurrencies
+- Ultra-short function examples and usage
+- Professional dataclass documentation
+- Enhanced validation examples
+- Quick API reference section
+
+#### API Documentation
+- Complete function documentation with examples
+- DataClass structure documentation
+- Error handling guidelines
+- Best practices and usage patterns
+
+### 🔄 Backward Compatibility
+
+All previous functions and classes remain fully compatible:
+- Legacy wallet generation functions
+- Original validation functions  
+- All Bitcoin, Ethereum, and Tron functionality
+- Previous API signatures maintained
+
 ## [5.0.0] - 2025-07-02
 
 ### Added

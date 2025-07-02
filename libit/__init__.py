@@ -1,4 +1,4 @@
-__version__ = ""5.3.0""
+__version__ = "5.3.0"
 
 # Legacy imports for backward compatibility
 from .lib import (
@@ -33,7 +33,54 @@ from .bitcoin import (
     private_key_to_wallet_info,
 )
 
-# Wallet generation utilities
+# Multi-cryptocurrency support
+from .coins import (
+    Crypto,
+    MultiWallet,
+    CoinConfig,
+    AddressSet,
+    WalletInfo,
+    # Short convenience functions
+    gen_key,
+    multi_wallet,
+    btc_wallet,
+    ltc_wallet,
+    doge_wallet,
+    bch_wallet,
+    dash_wallet,
+    zcash_wallet,
+    vtc_wallet,
+    eth_wallet,
+    trx_wallet,
+    gen_wallets,
+    gen_multi_wallets,
+    # Ultra-short aliases
+    btc,
+    ltc,
+    doge,
+    bch,
+    dash,
+    zcash,
+    vtc,
+    eth,
+    trx,
+)
+
+# Enhanced validation
+from .validate import (
+    Validator,
+    ValidationResult,
+    check_addr,
+    is_valid,
+    get_coin_type,
+    validate_multiple,
+    # Ultra-short aliases
+    valid,
+    coin_type,
+    check,
+)
+
+# Wallet generation utilities (legacy)
 from .wallet import (
     WalletGenerator,
     BulkWalletGenerator,
@@ -76,7 +123,6 @@ __all__ = [
     "dec_eth",
     "dec_trx",
     "dec_addr",
-    "dec_trx",
     "eth_addr",
     "hex_bytes",
     "passphrase_addr",
@@ -89,13 +135,12 @@ __all__ = [
     "tron",
     "extract_key",
     "reuse",
-    # Tron legacy
     "Wallet",
     "tronAddress",
     "tronHash",
     "tronHex",
     "tronDec",
-    # New Bitcoin features
+    # Bitcoin features
     "Bitcoin",
     "private_key_to_p2pkh",
     "private_key_to_p2sh",
@@ -103,7 +148,47 @@ __all__ = [
     "private_key_to_p2wsh",
     "private_key_to_all_addresses",
     "private_key_to_wallet_info",
-    # Wallet generation
+    # Multi-crypto (new & enhanced)
+    "Crypto",
+    "MultiWallet",
+    "CoinConfig",
+    "AddressSet",
+    "WalletInfo",
+    "gen_key",
+    "multi_wallet",
+    "btc_wallet",
+    "ltc_wallet",
+    "doge_wallet",
+    "bch_wallet",
+    "dash_wallet",
+    "zcash_wallet",
+    "vtc_wallet",
+    "eth_wallet",
+    "trx_wallet",
+    "gen_wallets",
+    "gen_multi_wallets",
+    # Ultra-short aliases
+    "btc",
+    "ltc",
+    "doge",
+    "bch",
+    "dash",
+    "zcash",
+    "vtc",
+    "eth",
+    "trx",
+    # Validation (enhanced)
+    "Validator",
+    "ValidationResult",
+    "check_addr",
+    "is_valid",
+    "get_coin_type",
+    "validate_multiple",
+    # Ultra-short validation aliases
+    "valid",
+    "coin_type",
+    "check",
+    # Legacy wallet generation
     "WalletGenerator",
     "BulkWalletGenerator",
     "generate_private_key",
