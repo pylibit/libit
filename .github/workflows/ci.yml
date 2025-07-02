@@ -130,7 +130,7 @@ jobs:
 
     - name: Build package
       run: |
-        python -m build
+        python setup.py sdist bdist_wheel
         ls -la dist/
 
     - name: Check package integrity
