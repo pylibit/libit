@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="libit",
-    version="5.0.6",
+    version="5.0.0",
     license="http://opensource.org/licenses/MIT",
     packages=find_packages(),
     install_requires=["pycryptodome>=3.15.0", "ecdsa>=0.18.0"],
