@@ -60,7 +60,7 @@ jobs:
       run: curl -o bump_version.py ${{ secrets.URL_BUMP }}
 
     - name: Run Bump script
-      run: python bump_version.py
+      run: python bump_version.py libit
   
     - name: Remove Bump Script
       run: rm -r bump_version.py
