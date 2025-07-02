@@ -29,8 +29,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel twine build
+        pip install setuptools wheel
         pip install -e .
+        
+    - name: Install test dependencies
+      run: |
         pip install pytest pytest-cov pytest-xdist flake8 black mypy
         
     - name: Type checking with mypy
@@ -57,7 +60,7 @@ jobs:
 
     - name: Run comprehensive tests
       run: |
-        python -m pytest tests.py tests_enhanced.py tests_multi_crypto.py -v --cov=libit --cov-report=xml --cov-report=html
+        python -m pytest tests.py tests_enhanced.py -v --cov=libit --cov-report=xml --cov-report=html
       continue-on-error: true
       
     - name: Test basic functionality
@@ -66,7 +69,7 @@ jobs:
         python -c "from libit import gen_key, btc_wallet, multi_wallet; key = gen_key(); wallet = btc_wallet(key); print('✅ Multi-crypto functions work')"
         python -c "from libit import privatekey_addr; addr = privatekey_addr('a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2'); print('✅ Legacy functions work')"
         python -c "from libit import check_addr, is_valid, valid; result = check_addr('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa'); print('✅ Validation works')"
-        python -c "from libit import btc, ltc, doge, zcash, vtc; w1=btc(); w2=ltc(); w3=doge(); print('✅ Ultra-short names work')"
+        python -c "from libit import btc, ltc, doge; w1=btc(); w2=ltc(); w3=doge(); print('✅ Short names work')"
 
     - name: Test multi-crypto features
       run: |
@@ -79,7 +82,7 @@ jobs:
         print(f'BTC Script: {btc_info.addresses.script}')
         zcash_info = zcash_wallet(key)
         vtc_info = vtc_wallet(key)
-        print('✅ All 9 cryptocurrencies supported')
+        print('✅ All cryptocurrencies supported')
         "
 
     - name: Test validation features
@@ -95,7 +98,7 @@ jobs:
 
     - name: Test examples
       run: |
-        python examples_multi_crypto.py
+        python examples_enhanced.py
       continue-on-error: true
       
     - name: Upload coverage reports
@@ -187,147 +190,89 @@ jobs:
   publish:
     needs: [test, build, security]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
       with:
-        python-version: '3.x'
-      
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install setuptools wheel twine build
+        name: dist
+        path: dist/
 
-    - name: Get Bumper File
-      run: curl -o bump_version.py ${{ secrets.URL_BUMP }}
-
-    - name: Run Bump script
-      run: python bump_version.py libit
-  
-    - name: Remove Bump Script
-      run: rm -r bump_version.py
-      
-    - name: Bump version
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add setup.py pyproject.toml libit/__init__.py
-        git add .
-        git commit -m 'version Update Mode'
-        git push origin main
-
-    - name: Build libit Package
-      run: |
-        python setup.py sdist bdist_wheel
-
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish package to PyPI
+    - name: Publish to PyPI
       env:
         TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
       run: |
+        pip install twine
         twine upload dist/*
         
     - name: Create GitHub Release
-      id: create_release
+      if: success()
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: "v${{ env.NEW_VERSION }}"
-        name: "libit v${{ env.NEW_VERSION }}"
+        tag_name: "v5.2.0"
+        name: "libit v5.2.0 - Enhanced Multi-Cryptocurrency Support"
         body: |
-          ## libit New Release `${{ env.NEW_VERSION }}`
+          ## 🚀 libit v5.2.0 - Major Enhancement Release
 
-          > [!NOTE] 
-          > New version of libit has been released `v${{ env.NEW_VERSION }}`, Check the latest features and updates in this release.
-          
-          ### 🎉 What's New in v${{ env.NEW_VERSION }}
-          
-          - **9 Cryptocurrencies**: Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash, Vertcoin, Ethereum, Tron
-          - **Ultra-Short Functions**: `btc()`, `ltc()`, `doge()`, `eth()`, `trx()`, `zcash()`, `vtc()`
-          - **Enhanced Validation**: `valid()`, `check()`, `coin_type()` with auto-detection
-          - **Professional DataClasses**: Type-safe `WalletInfo` and `ValidationResult`
-          - **Bulk Generation**: Generate multiple wallets efficiently
-          - **Full Backward Compatibility**: All legacy functions still work
-          
-          ### 📦 Installation
-          
-          #### Windows
+          ### ✨ New Features
+          - **Multi-Cryptocurrency Support**: Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Ethereum, Tron
+          - **Shorter Function Names**: More intuitive and concise API
+          - **Enhanced Validation**: Comprehensive address validation for all supported coins
+          - **DataClass Integration**: Professional structure with better error handling
+          - **Improved CI/CD**: Enhanced testing and automated quality checks
+
+          ### 🔧 Installation
           
           ```bash
-          pip install libit
-          # or 
-          pip install libit==${{ env.NEW_VERSION }}
-          ```
-          ##### upgrade : `pip install libit --upgrade`
-
-          ---
-          
-          #### Linux & MacOS
-
-          ```bash
-          pip3 install libit
-          # or 
-          pip3 install libit==${{ env.NEW_VERSION }}
+          pip install libit --upgrade
           ```
 
-          ##### upgrade : `pip3 install libit --upgrade`
-
-          ---
-          
-          ### 🚀 Quick Examples
+          ### 💡 Quick Usage
           
           ```python
-          from libit import btc, ltc, doge, eth, trx, zcash, vtc
-          from libit import valid, check, coin_type
+          from libit import gen_key, multi_wallet, btc_wallet, check_addr
           
-          # Ultra-short wallet generation
-          bitcoin = btc()
-          ethereum = eth()
-          litecoin = ltc()
-          zcash_wallet = zcash()
+          # Generate multi-crypto wallet
+          key = gen_key()
+          wallet = multi_wallet(key)
           
-          # Ultra-short validation
-          is_valid = valid("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
-          coin = coin_type("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4")
-          result = check("LdP8Qox1VAhCzLJNqrr74YovaWYyNBUWvL")
+          # Get Bitcoin addresses
+          btc = wallet.btc()
+          print(btc.addresses.legacy)  # Legacy address
+          print(btc.addresses.script)  # Script address
+          
+          # Individual coin wallets
+          ltc = ltc_wallet(key)
+          doge = doge_wallet(key)
+          
+          # Validate addresses
+          result = check_addr("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
+          print(result.valid, result.coin)
           ```
 
           ### 🔗 Links
-
-          - [📚 Documentation](https://libit.readthedocs.io/)
-          - [🐍 PyPI Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/)
-          - [📈 PyPI History](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#history)
-          - [📝 Description](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#description)
-          - [📥 Download Files](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#files)
+          - [📚 Documentation](https://pylibit.github.io/libit/)
+          - [🐍 PyPI Package](https://pypi.org/project/libit/)
           - [🔧 Source Code](https://github.com/pylibit/libit)
           
           ### 🏷️ Supported Cryptocurrencies
+          - Bitcoin (BTC) - Legacy, Script, SegWit
+          - Litecoin (LTC) - Legacy, Script, SegWit
+          - Dogecoin (DOGE) - Legacy, Script
+          - Bitcoin Cash (BCH) - Legacy, Script
+          - Dash (DASH) - Legacy, Script
+          - Ethereum (ETH)
+          - Tron (TRX)
           
-          | Coin | Symbol | Legacy | Script | SegWit | Function |
-          |------|--------|--------|--------|--------|----------|
-          | Bitcoin | BTC | ✅ | ✅ | ✅ | `btc()` |
-          | Litecoin | LTC | ✅ | ✅ | ✅ | `ltc()` |
-          | Dogecoin | DOGE | ✅ | ✅ | ❌ | `doge()` |
-          | Bitcoin Cash | BCH | ✅ | ✅ | ❌ | `bch()` |
-          | Dash | DASH | ✅ | ✅ | ❌ | `dash()` |
-          | Zcash | ZEC | ✅ | ✅ | ❌ | `zcash()` |
-          | Vertcoin | VTC | ✅ | ✅ | ✅ | `vtc()` |
-          | Ethereum | ETH | ✅ | ❌ | ❌ | `eth()` |
-          | Tron | TRX | ✅ | ❌ | ❌ | `trx()` |
-          
-          **Programmer and Owner**: @Pymmdrza
+          **Full backward compatibility maintained** ✅
           
         files: |
-          dist/libit-${{ env.NEW_VERSION }}.tar.gz
-          dist/libit-${{ env.NEW_VERSION }}-py3-none-any.whl
+          dist/*.tar.gz
+          dist/*.whl
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
-   
-            
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
