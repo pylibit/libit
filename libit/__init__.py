@@ -1,4 +1,4 @@
-__version__ = "5.0.6"
+__version__ = "5.0.9"
 
 # Legacy imports for backward compatibility
 from .lib import (
