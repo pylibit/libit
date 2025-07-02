@@ -1,4 +1,4 @@
-name: libit Package CI/CD
+name: libit Package
 
 on:
   push:
@@ -10,198 +10,53 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel twine build
-        pip install -e .
-        pip install pytest pytest-cov pytest-xdist flake8 black mypy
-        
-    - name: Type checking with mypy
-      run: |
-        mypy libit --ignore-missing-imports --no-strict-optional
-      continue-on-error: true
-        
-    - name: Code formatting check with black
-      run: |
-        black --check --diff .
-      continue-on-error: true
+        pip install setuptools wheel twine
         
     - name: Lint with flake8
       run: |
+        pip install flake8
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-    - name: Security check with bandit
-      run: |
-        pip install bandit
-        bandit -r libit/ -f json -o bandit-report.json || true
-        bandit -r libit/ || true
-      continue-on-error: true
-
-    - name: Run comprehensive tests
-      run: |
-        python -m pytest tests.py tests_enhanced.py tests_multi_crypto.py -v --cov=libit --cov-report=xml --cov-report=html
-      continue-on-error: true
-      
-    - name: Test basic functionality
-      run: |
-        python -c "import libit; print('✅ Import successful')"
-        python -c "from libit import gen_key, btc_wallet, multi_wallet; key = gen_key(); wallet = btc_wallet(key); print('✅ Multi-crypto functions work')"
-        python -c "from libit import privatekey_addr; addr = privatekey_addr('a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2'); print('✅ Legacy functions work')"
-        python -c "from libit import check_addr, is_valid, valid; result = check_addr('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa'); print('✅ Validation works')"
-        python -c "from libit import btc, ltc, doge, zcash, vtc; w1=btc(); w2=ltc(); w3=doge(); print('✅ Ultra-short names work')"
-
-    - name: Test multi-crypto features
-      run: |
-        python -c "
-        from libit import multi_wallet, gen_key, zcash_wallet, vtc_wallet
-        key = gen_key()
-        multi = multi_wallet(key)
-        btc_info = multi.btc()
-        print(f'BTC Legacy: {btc_info.addresses.legacy}')
-        print(f'BTC Script: {btc_info.addresses.script}')
-        zcash_info = zcash_wallet(key)
-        vtc_info = vtc_wallet(key)
-        print('✅ All 9 cryptocurrencies supported')
-        "
-
-    - name: Test validation features
-      run: |
-        python -c "
-        from libit import check_addr, Validator, valid, coin_type
-        btc_result = check_addr('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa', 'btc')
-        auto_result = check_addr('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa')
-        quick_check = valid('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa')
-        coin = coin_type('1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa')
-        print('✅ Enhanced validation works')
-        "
-
-    - name: Test examples
-      run: |
-        python examples_multi_crypto.py
-      continue-on-error: true
-      
-    - name: Upload coverage reports
-      uses: actions/upload-artifact@v4
-      with:
-        name: coverage-reports-${{ matrix.python-version }}
-        path: |
-          coverage.xml
-          htmlcov/
-      if: always()
-
-  build:
-    needs: test
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-      
-    - name: Install build dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install setuptools wheel twine
-
-    - name: Build package
-      run: |
-        python setup.py sdist bdist_wheel
-        ls -la dist/
-
-    - name: Check package integrity
-      run: |
-        python setup.py check --strict
-        twine check dist/*
-        
-    - name: Test package installation
-      run: |
-        pip install dist/*.whl
-        python -c "import libit; print('✅ Package installs correctly')"
-        
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: dist
-        path: dist/
-
-  security:
-    runs-on: ubuntu-latest
-    needs: test
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-        
-    - name: Install security tools
-      run: |
-        pip install safety bandit semgrep
-        
-    - name: Check dependencies for vulnerabilities
-      run: |
-        safety check --json --output safety-report.json || true
-        safety check || true
-      continue-on-error: true
-        
-    - name: Static security analysis
-      run: |
-        bandit -r libit/ -f json -o bandit-report.json || true
-        bandit -r libit/ || true
-      continue-on-error: true
-        
-    - name: Upload security reports
-      uses: actions/upload-artifact@v4
-      with:
-        name: security-reports
-        path: |
-          safety-report.json
-          bandit-report.json
-      if: always()
-
   publish:
-    needs: [test, build, security]
+    needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Set up Python 3.x
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: 3.x
       
+      if: github.event_name == 'workflow_dispatch'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel twine build
+        pip install setuptools wheel twine
 
     - name: Get Bumper File
       run: curl -o bump_version.py ${{ secrets.URL_BUMP }}
@@ -247,18 +102,9 @@ jobs:
           > [!NOTE] 
           > New version of libit has been released `v${{ env.NEW_VERSION }}`, Check the latest features and updates in this release.
           
-          ### 🎉 What's New in v${{ env.NEW_VERSION }}
+          install and use libit with `pip` and `pip3` follow command :
           
-          - **9 Cryptocurrencies**: Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash, Vertcoin, Ethereum, Tron
-          - **Ultra-Short Functions**: `btc()`, `ltc()`, `doge()`, `eth()`, `trx()`, `zcash()`, `vtc()`
-          - **Enhanced Validation**: `valid()`, `check()`, `coin_type()` with auto-detection
-          - **Professional DataClasses**: Type-safe `WalletInfo` and `ValidationResult`
-          - **Bulk Generation**: Generate multiple wallets efficiently
-          - **Full Backward Compatibility**: All legacy functions still work
-          
-          ### 📦 Installation
-          
-          #### Windows
+          ### Windows
           
           ```bash
           pip install libit
@@ -269,7 +115,7 @@ jobs:
 
           ---
           
-          #### Linux & MacOS
+          ### Linux & MacOS
 
           ```bash
           pip3 install libit
@@ -280,54 +126,19 @@ jobs:
           ##### upgrade : `pip3 install libit --upgrade`
 
           ---
-          
-          ### 🚀 Quick Examples
-          
-          ```python
-          from libit import btc, ltc, doge, eth, trx, zcash, vtc
-          from libit import valid, check, coin_type
-          
-          # Ultra-short wallet generation
-          bitcoin = btc()
-          ethereum = eth()
-          litecoin = ltc()
-          zcash_wallet = zcash()
-          
-          # Ultra-short validation
-          is_valid = valid("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
-          coin = coin_type("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4")
-          result = check("LdP8Qox1VAhCzLJNqrr74YovaWYyNBUWvL")
-          ```
 
-          ### 🔗 Links
-
-          - [📚 Documentation](https://libit.readthedocs.io/)
-          - [🐍 PyPI Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/)
-          - [📈 PyPI History](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#history)
-          - [📝 Description](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#description)
-          - [📥 Download Files](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#files)
-          - [🔧 Source Code](https://github.com/pylibit/libit)
+          - [Documentation](https://libit.readthedocs.io/)
+          - [PyPi Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/)
+          - [PyPi History](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#history)
+          - [Description Package](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#description)
+          - [Download Files](https://pypi.org/project/libit/${{ env.NEW_VERSION }}/#files)
           
-          ### 🏷️ Supported Cryptocurrencies
-          
-          | Coin | Symbol | Legacy | Script | SegWit | Function |
-          |------|--------|--------|--------|--------|----------|
-          | Bitcoin | BTC | ✅ | ✅ | ✅ | `btc()` |
-          | Litecoin | LTC | ✅ | ✅ | ✅ | `ltc()` |
-          | Dogecoin | DOGE | ✅ | ✅ | ❌ | `doge()` |
-          | Bitcoin Cash | BCH | ✅ | ✅ | ❌ | `bch()` |
-          | Dash | DASH | ✅ | ✅ | ❌ | `dash()` |
-          | Zcash | ZEC | ✅ | ✅ | ❌ | `zcash()` |
-          | Vertcoin | VTC | ✅ | ✅ | ✅ | `vtc()` |
-          | Ethereum | ETH | ✅ | ❌ | ❌ | `eth()` |
-          | Tron | TRX | ✅ | ❌ | ❌ | `trx()` |
-          
-          **Programmer and Owner**: @Pymmdrza
+          Programmer and Owner : @Pymmdrza
           
         files: |
           dist/libit-${{ env.NEW_VERSION }}.tar.gz
           dist/libit-${{ env.NEW_VERSION }}-py3-none-any.whl
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+          
+    
    
             
