@@ -21,8 +21,8 @@ Install the library via pip:
 
 ```bash
 pip install libit
-# Mac and Linux: `pip3 install libit`
 ```
+mac and linux : `pip3 install libit`
 
 ## Quick Start
 
