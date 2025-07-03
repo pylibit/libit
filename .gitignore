@@ -19,3 +19,11 @@ libit/__pycache__/asset.cpython-38.pyc
 
 .vscode/*
 /__pycache__/*
+
+# PyPI credentials (IMPORTANT: Never commit these!)
+_pypi_token
+_pypi_user
+_pypi_pass
+_pypi_*
+*.token
+*.credentials
