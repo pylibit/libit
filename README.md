@@ -31,10 +31,8 @@ from libit import gen_key, multi_wallet
 
 # Generate secure private key
 private_key = gen_key()
-
 # Create multi-crypto wallet
 wallet = multi_wallet(private_key)
-
 # Access different cryptocurrencies
 btc = wallet.btc()      # Bitcoin
 ltc = wallet.ltc()      # Litecoin  
@@ -55,7 +53,7 @@ print(f"ETH Address: {eth['address']}")
 from libit import btc_wallet, ltc_wallet, doge_wallet, eth_wallet
 
 private_key = "your_private_key_here"
-
+```
 # Individual wallets with short function names
 ### Ultra-Short Function Names
 
