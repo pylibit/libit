@@ -2,7 +2,8 @@
 Wallet generation utilities for multiple cryptocurrencies.
 Provides unified interface for Bitcoin, Ethereum, and Tron wallet generation.
 """
-
+import hashlib
+import hmac
 import secrets
 import os
 from typing import Dict, Any, Optional, List
@@ -50,9 +51,6 @@ class WalletGenerator:
         Returns:
             64-character hexadecimal private key string
         """
-        import hashlib
-        import hmac
-
         # Simple implementation - in production, use proper BIP39 library
         seed = hashlib.pbkdf2_hmac(
             "sha512",
