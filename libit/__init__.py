@@ -3,7 +3,7 @@ libit - Multi-cryptocurrency wallet generation and validation library
 Supports Bitcoin, Ethereum, Tron, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash, and Vertcoin.
 """
 
-__version__ = "5.3.4"
+__version__ = "5.3.5"
 
 # Core imports from lib (Legacy support)
 from .lib import (
