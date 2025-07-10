@@ -115,7 +115,7 @@ quick_check = check("DQE1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
 print(f"valid() → {is_valid_addr}")
 print(f"coin_type() → {detected_coin}")  # ltc
 print(f"check() → {quick_check.coin}")   # doge
-
+```
 ### Bulk Wallet Generation
 
 Generate multiple wallets efficiently:
@@ -212,7 +212,7 @@ print(wallet.to_dict())  # Convert to dictionary
 # Validation returns structured results
 result = check("address")  # Returns ValidationResult dataclass
 print(result.valid, result.coin, result.addr_type)
-
+```
 ## Bulk Generation
 
 ### Bulk Generation
